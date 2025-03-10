@@ -62,7 +62,7 @@ const ChatWidget = () => {
       {/* Chat Widget Button */}
       <button
         onClick={toggleChat}
-        className={`flex items-center justify-center w-14 h-14 rounded-full bg-roofing-teal text-white shadow-lg hover:bg-roofing-teal/90 transition-all ${
+        className={`absolute bottom-0 right-0 flex items-center justify-center w-14 h-14 rounded-full bg-roofing-teal text-white shadow-lg hover:bg-roofing-teal/90 transition-all ${
           isOpen ? 'scale-0 opacity-0' : 'scale-100 opacity-100'
         }`}
       >
