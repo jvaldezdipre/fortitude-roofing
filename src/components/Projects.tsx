@@ -9,7 +9,7 @@ const projects = [
     title: 'Modern Residential Roof Installation',
     location: 'Portland, OR',
     description: 'Complete tear-off and installation of a new architectural shingle roof system with improved ventilation.',
-    image: 'https://images.unsplash.com/photo-1632759145399-8b9bc110f045?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: 'https://images.unsplash.com/photo-1631199545583-58a4d96e8d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
     tags: ['Residential', 'Installation', 'Shingles']
   },
   {
@@ -17,7 +17,7 @@ const projects = [
     title: 'Commercial Building Roof Replacement',
     location: 'Seattle, WA',
     description: 'Full commercial roof replacement with energy-efficient materials, improving insulation and reducing heating costs.',
-    image: 'https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80',
+    image: 'https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
     tags: ['Commercial', 'Replacement', 'Energy-Efficient']
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     title: 'Custom Metal Roof Installation',
     location: 'Denver, CO',
     description: 'Installation of a premium standing seam metal roof with custom color and snow guards for a mountain property.',
-    image: 'https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: 'https://images.unsplash.com/photo-1632759145399-8b9bc110f045?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
     tags: ['Residential', 'Metal Roof', 'Custom']
   },
   {
@@ -33,7 +33,7 @@ const projects = [
     title: 'Storm Damage Repair',
     location: 'Austin, TX',
     description: 'Emergency repair after severe hail damage, including replacement of damaged sections and reinforcement.',
-    image: 'https://images.unsplash.com/photo-1455735459330-969b65c65b11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80',
+    image: 'https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
     tags: ['Residential', 'Repair', 'Emergency']
   }
 ];

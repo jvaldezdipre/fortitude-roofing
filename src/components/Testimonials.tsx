@@ -9,7 +9,7 @@ const testimonials = [
     role: 'Homeowner',
     quote: 'PeakRoof transformed our home with a beautiful new roof. The team was professional, efficient, and cleaned up thoroughly after the job. Couldn\'t be happier with the results!',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80'
+    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const testimonials = [
     role: 'Business Owner',
     quote: 'As a business owner, I needed a roofing company that could work around our schedule. PeakRoof did just that, completing our commercial roof replacement with minimal disruption to our operations.',
     rating: 5,
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80'
+    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const testimonials = [
     role: 'Property Manager',
     quote: 'We\'ve used PeakRoof for multiple properties in our management portfolio. Their consistent quality, fair pricing, and attention to detail make them our go-to roofing contractor.',
     rating: 4,
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80'
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80'
   }
 ];
 
