@@ -58,7 +58,7 @@ const ChatWidget = () => {
   }, [messages]);
 
   return (
-    <div className="fixed bottom-5 right-5 z-50">
+    <div className="fixed bottom-8 right-8 z-50">
       {/* Chat Widget Button */}
       <button
         onClick={toggleChat}
