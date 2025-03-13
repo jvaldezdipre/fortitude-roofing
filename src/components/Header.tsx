@@ -36,7 +36,11 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/fc68ab70-f495-400c-9e90-5e99d06d73b1.png" 
                 alt="Fortitude Roofing Company" 
-                className={`h-12 transition-opacity duration-300 ${isScrolled ? 'opacity-100' : 'opacity-90'}`}
+                className={`h-12 transition-all duration-300 ${
+                  isScrolled 
+                    ? 'opacity-100 brightness-100 contrast-100' 
+                    : 'opacity-90 brightness-0 invert contrast-200'
+                }`}
               />
             </a>
           </div>
