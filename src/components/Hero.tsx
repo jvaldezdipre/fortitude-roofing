@@ -9,8 +9,8 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-roofing-charcoal/90 to-roofing-charcoal/70 z-10"></div>
         <img 
-          src="https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" 
-          alt="Modern roofing on a luxury home" 
+          src="/lovable-uploads/c104633a-88cc-4061-b41e-60e84bb24f63.png" 
+          alt="Aerial view of modern white roof with pool" 
           className="w-full h-full object-cover"
         />
       </div>
