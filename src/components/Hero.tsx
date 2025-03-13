@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[600px] flex items-center overflow-hidden py-16 lg:py-24">
+    <section className="relative h-screen flex items-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-roofing-charcoal/90 to-roofing-charcoal/70 z-10"></div>
@@ -25,7 +25,7 @@ const Hero = () => {
             With over 20 years of experience, we deliver exceptional roofing services 
             for residential and commercial properties across the region.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Button size="lg" className="bg-roofing-teal hover:bg-roofing-teal/90 text-white px-8">
               Get a Free Quote
             </Button>
@@ -33,7 +33,9 @@ const Hero = () => {
               Our Services <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+          
+          {/* Stats Section */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-4 py-3 rounded-md">
               <span className="text-roofing-teal font-bold text-3xl">20+</span>
               <span className="text-white text-sm">Years Experience</span>
