@@ -2,11 +2,13 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Menu, X } from 'lucide-react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const isMobile = useIsMobile();
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -45,8 +47,8 @@ const Header = () => {
             </a>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          {/* Desktop Navigation - Only visible on large screens (lg) */}
+          <nav className="hidden lg:flex items-center space-x-8">
             <a href="#services" className={`font-medium transition-colors ${isScrolled ? 'text-roofing-charcoal hover:text-roofing-teal' : 'text-white hover:text-roofing-teal'}`}>Services</a>
             <a href="#projects" className={`font-medium transition-colors ${isScrolled ? 'text-roofing-charcoal hover:text-roofing-teal' : 'text-white hover:text-roofing-teal'}`}>Projects</a>
             <a href="#about" className={`font-medium transition-colors ${isScrolled ? 'text-roofing-charcoal hover:text-roofing-teal' : 'text-white hover:text-roofing-teal'}`}>About Us</a>
@@ -54,8 +56,8 @@ const Header = () => {
             <a href="#contact" className={`font-medium transition-colors ${isScrolled ? 'text-roofing-charcoal hover:text-roofing-teal' : 'text-white hover:text-roofing-teal'}`}>Contact</a>
           </nav>
 
-          {/* Contact Button */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* Contact Button - Only visible on large screens (lg) */}
+          <div className="hidden lg:flex items-center space-x-4">
             <a href="tel:+18005551234" className={`flex items-center ${isScrolled ? 'text-roofing-charcoal' : 'text-white'}`}>
               <Phone className="h-4 w-4 mr-2" />
               <span className="font-medium">1-800-555-1234</span>
@@ -65,20 +67,21 @@ const Header = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          {/* Mobile/Tablet Menu Button - Visible on all screens below lg breakpoint */}
+          <div className="lg:hidden flex items-center">
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className={`p-2 rounded-md ${isScrolled ? 'text-roofing-charcoal' : 'text-white'}`}
+              aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile/Tablet Menu - Visible on all screens below lg breakpoint when menu is open */}
         {mobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg animate-fade-in">
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-lg animate-fade-in">
             <div className="px-4 py-5 space-y-4">
               <a href="#services" className="block text-roofing-charcoal hover:text-roofing-teal font-medium" onClick={() => setMobileMenuOpen(false)}>Services</a>
               <a href="#projects" className="block text-roofing-charcoal hover:text-roofing-teal font-medium" onClick={() => setMobileMenuOpen(false)}>Projects</a>
