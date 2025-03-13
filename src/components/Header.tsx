@@ -33,7 +33,11 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <a href="#" className="flex items-center">
-              <span className={`text-2xl font-bold ${isScrolled ? 'text-roofing-charcoal' : 'text-white'}`}>Peak<span className="text-roofing-teal">Roof</span></span>
+              <img 
+                src="/lovable-uploads/fc68ab70-f495-400c-9e90-5e99d06d73b1.png" 
+                alt="Fortitude Roofing Company" 
+                className={`h-12 transition-opacity duration-300 ${isScrolled ? 'opacity-100' : 'opacity-90'}`}
+              />
             </a>
           </div>
 
