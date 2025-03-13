@@ -65,7 +65,7 @@ export default {
 				},
 				roofing: {
 					charcoal: '#2A2A2A',
-					teal: '#34D1BF',
+					teal: '#1E73BE', // Changed from #34D1BF to blue from logo
 					lightgray: '#F5F5F5',
 					darkgray: '#4A4A4A'
 				}
