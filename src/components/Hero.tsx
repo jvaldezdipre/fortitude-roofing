@@ -1,8 +1,20 @@
 
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, User, Mail, Phone } from 'lucide-react';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { useState } from 'react';
 
 const Hero = () => {
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // In a real application, you would submit the form data to your backend here
+    setFormSubmitted(true);
+    setTimeout(() => setFormSubmitted(false), 3000);
+  };
+
   return (
     <section className="relative h-screen flex items-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -17,41 +29,103 @@ const Hero = () => {
       
       {/* Hero Content */}
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="max-w-2xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-bold leading-tight mb-4">
-            Quality Roofing Solutions You Can Trust
-          </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
-            With over 20 years of experience, we deliver exceptional roofing services 
-            for residential and commercial properties across the region.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button size="lg" className="bg-roofing-teal hover:bg-roofing-teal/90 text-white px-8">
-              Get a Free Quote
-            </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
-              Our Services <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          {/* Left Column - Main Hero Content */}
+          <div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-bold leading-tight mb-4">
+              Quality Roofing Solutions You Can Trust
+            </h1>
+            <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
+              With over 20 years of experience, we deliver exceptional roofing services 
+              for residential and commercial properties across the region.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <Button size="lg" className="bg-roofing-teal hover:bg-roofing-teal/90 text-white px-8">
+                Get a Free Quote
+              </Button>
+              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+                Our Services <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </div>
+            
+            {/* Stats Section */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+              <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-4 py-3 rounded-md">
+                <span className="text-roofing-teal font-bold text-3xl">20+</span>
+                <span className="text-white text-sm">Years Experience</span>
+              </div>
+              <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-4 py-3 rounded-md">
+                <span className="text-roofing-teal font-bold text-3xl">1,500+</span>
+                <span className="text-white text-sm">Projects Completed</span>
+              </div>
+              <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-4 py-3 rounded-md">
+                <span className="text-roofing-teal font-bold text-3xl">100%</span>
+                <span className="text-white text-sm">Satisfaction</span>
+              </div>
+              <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-4 py-3 rounded-md">
+                <span className="text-roofing-teal font-bold text-3xl">5-Year</span>
+                <span className="text-white text-sm">Warranty</span>
+              </div>
+            </div>
           </div>
           
-          {/* Stats Section */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-4 py-3 rounded-md">
-              <span className="text-roofing-teal font-bold text-3xl">20+</span>
-              <span className="text-white text-sm">Years Experience</span>
-            </div>
-            <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-4 py-3 rounded-md">
-              <span className="text-roofing-teal font-bold text-3xl">1,500+</span>
-              <span className="text-white text-sm">Projects Completed</span>
-            </div>
-            <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-4 py-3 rounded-md">
-              <span className="text-roofing-teal font-bold text-3xl">100%</span>
-              <span className="text-white text-sm">Satisfaction</span>
-            </div>
-            <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-4 py-3 rounded-md">
-              <span className="text-roofing-teal font-bold text-3xl">5-Year</span>
-              <span className="text-white text-sm">Warranty</span>
-            </div>
+          {/* Right Column - Contact Form */}
+          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 max-w-md mx-auto lg:ml-auto w-full">
+            <h2 className="text-2xl font-bold text-white mb-4">Request a Free Quote</h2>
+            {formSubmitted ? (
+              <div className="bg-roofing-teal/20 border border-roofing-teal text-white p-4 rounded-md mb-4">
+                <p className="font-medium">Thanks for your request!</p>
+                <p className="text-sm mt-1">We'll get back to you within 24 hours.</p>
+              </div>
+            ) : null}
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div>
+                <div className="relative">
+                  <User className="absolute left-3 top-1/2 -translate-y-1/2 text-white/60 h-4 w-4" />
+                  <Input 
+                    className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-white/60 focus-visible:ring-roofing-teal" 
+                    placeholder="Your Name" 
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <div className="relative">
+                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-white/60 h-4 w-4" />
+                  <Input 
+                    type="email" 
+                    className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-white/60 focus-visible:ring-roofing-teal" 
+                    placeholder="Email Address" 
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <div className="relative">
+                  <Phone className="absolute left-3 top-1/2 -translate-y-1/2 text-white/60 h-4 w-4" />
+                  <Input 
+                    type="tel" 
+                    className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-white/60 focus-visible:ring-roofing-teal" 
+                    placeholder="Phone Number" 
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <Textarea 
+                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60 focus-visible:ring-roofing-teal" 
+                  placeholder="Tell us about your project..." 
+                  rows={4}
+                  required
+                />
+              </div>
+              <Button 
+                type="submit" 
+                className="w-full bg-roofing-teal hover:bg-roofing-teal/90 text-white"
+              >
+                Submit Request
+              </Button>
+            </form>
           </div>
         </div>
       </div>
