@@ -4,9 +4,11 @@ import { ArrowRight, User, Mail, Phone } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useState } from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const Hero = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const isMobile = useIsMobile();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -16,7 +18,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-roofing-charcoal/90 to-roofing-charcoal/70 z-10"></div>
@@ -28,18 +30,18 @@ const Hero = () => {
       </div>
       
       {/* Hero Content */}
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 py-12 md:py-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Column - Main Hero Content */}
-          <div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-bold leading-tight mb-4">
+          <div className="mt-8 md:mt-0">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-tight mb-4">
               Quality Roofing Solutions You Can Trust
             </h1>
-            <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
+            <p className="text-base md:text-lg text-white/90 mb-6 md:mb-8 max-w-2xl">
               With over 20 years of experience, we deliver exceptional roofing services 
               for residential and commercial properties across the region.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8 md:mb-12">
               <Button size="lg" className="bg-roofing-teal hover:bg-roofing-teal/90 text-white px-8">
                 Get a Free Quote
               </Button>
@@ -49,29 +51,29 @@ const Hero = () => {
             </div>
             
             {/* Stats Section */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-              <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-4 py-3 rounded-md">
-                <span className="text-roofing-teal font-bold text-3xl">20+</span>
-                <span className="text-white text-sm">Years Experience</span>
+            <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4 mb-8 md:mb-0">
+              <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
+                <span className="text-roofing-teal font-bold text-2xl md:text-3xl">20+</span>
+                <span className="text-white text-xs md:text-sm text-center">Years Experience</span>
               </div>
-              <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-4 py-3 rounded-md">
-                <span className="text-roofing-teal font-bold text-3xl">1,500+</span>
-                <span className="text-white text-sm">Projects Completed</span>
+              <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
+                <span className="text-roofing-teal font-bold text-2xl md:text-3xl">1,500+</span>
+                <span className="text-white text-xs md:text-sm text-center">Projects Completed</span>
               </div>
-              <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-4 py-3 rounded-md">
-                <span className="text-roofing-teal font-bold text-3xl">100%</span>
-                <span className="text-white text-sm">Satisfaction</span>
+              <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
+                <span className="text-roofing-teal font-bold text-2xl md:text-3xl">100%</span>
+                <span className="text-white text-xs md:text-sm text-center">Satisfaction</span>
               </div>
-              <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-4 py-3 rounded-md">
-                <span className="text-roofing-teal font-bold text-3xl">5-Year</span>
-                <span className="text-white text-sm">Warranty</span>
+              <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
+                <span className="text-roofing-teal font-bold text-2xl md:text-3xl">5-Year</span>
+                <span className="text-white text-xs md:text-sm text-center">Warranty</span>
               </div>
             </div>
           </div>
           
           {/* Right Column - Contact Form */}
-          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 max-w-md mx-auto lg:ml-auto w-full">
-            <h2 className="text-2xl font-bold text-white mb-4">Request a Free Quote</h2>
+          <div className="bg-white/10 backdrop-blur-sm p-5 md:p-6 rounded-lg border border-white/20 max-w-md mx-auto lg:ml-auto w-full">
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-4">Request a Free Quote</h2>
             {formSubmitted ? (
               <div className="bg-roofing-teal/20 border border-roofing-teal text-white p-4 rounded-md mb-4">
                 <p className="font-medium">Thanks for your request!</p>
