@@ -34,18 +34,18 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Column - Main Hero Content */}
           <div className="mt-8 md:mt-0">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-tight mb-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-tight mb-4 tracking-wide">
               Quality Roofing Solutions You Can Trust
             </h1>
-            <p className="text-base md:text-lg text-white/90 mb-6 md:mb-8 max-w-2xl">
+            <p className="text-base md:text-lg text-white/90 mb-6 md:mb-8 max-w-2xl tracking-wide">
               With over 20 years of experience, we deliver exceptional roofing services 
               for residential and commercial properties across the region.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8 md:mb-12">
-              <Button size="lg" className="bg-roofing-teal hover:bg-roofing-teal/90 text-white px-8">
+              <Button size="lg" className="bg-roofing-teal hover:bg-roofing-teal/90 text-white px-8 tracking-wide">
                 Get a Free Quote
               </Button>
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 tracking-wide">
                 Our Services <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
@@ -53,31 +53,31 @@ const Hero = () => {
             {/* Stats Section */}
             <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4 mb-8 md:mb-0">
               <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
-                <span className="text-roofing-teal font-bold text-2xl md:text-3xl">20+</span>
-                <span className="text-white text-xs md:text-sm text-center">Years Experience</span>
+                <span className="text-roofing-teal font-bold text-2xl md:text-3xl tracking-wide">20+</span>
+                <span className="text-white text-xs md:text-sm text-center tracking-wide">Years Experience</span>
               </div>
               <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
-                <span className="text-roofing-teal font-bold text-2xl md:text-3xl">1,500+</span>
-                <span className="text-white text-xs md:text-sm text-center">Projects Completed</span>
+                <span className="text-roofing-teal font-bold text-2xl md:text-3xl tracking-wide">1,500+</span>
+                <span className="text-white text-xs md:text-sm text-center tracking-wide">Projects Completed</span>
               </div>
               <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
-                <span className="text-roofing-teal font-bold text-2xl md:text-3xl">100%</span>
-                <span className="text-white text-xs md:text-sm text-center">Satisfaction</span>
+                <span className="text-roofing-teal font-bold text-2xl md:text-3xl tracking-wide">100%</span>
+                <span className="text-white text-xs md:text-sm text-center tracking-wide">Satisfaction</span>
               </div>
               <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
-                <span className="text-roofing-teal font-bold text-2xl md:text-3xl">5-Year</span>
-                <span className="text-white text-xs md:text-sm text-center">Warranty</span>
+                <span className="text-roofing-teal font-bold text-2xl md:text-3xl tracking-wide">5-Year</span>
+                <span className="text-white text-xs md:text-sm text-center tracking-wide">Warranty</span>
               </div>
             </div>
           </div>
           
           {/* Right Column - Contact Form */}
           <div className="bg-white/10 backdrop-blur-sm p-5 md:p-6 rounded-lg border border-white/20 max-w-md mx-auto lg:ml-auto w-full">
-            <h2 className="text-xl md:text-2xl font-bold text-white mb-4">Request a Free Quote</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-4 tracking-wide">Request a Free Quote</h2>
             {formSubmitted ? (
               <div className="bg-roofing-teal/20 border border-roofing-teal text-white p-4 rounded-md mb-4">
-                <p className="font-medium">Thanks for your request!</p>
-                <p className="text-sm mt-1">We'll get back to you within 24 hours.</p>
+                <p className="font-medium tracking-wide">Thanks for your request!</p>
+                <p className="text-sm mt-1 tracking-wide">We'll get back to you within 24 hours.</p>
               </div>
             ) : null}
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -85,7 +85,7 @@ const Hero = () => {
                 <div className="relative">
                   <User className="absolute left-3 top-1/2 -translate-y-1/2 text-white/60 h-4 w-4" />
                   <Input 
-                    className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-white/60 focus-visible:ring-roofing-teal" 
+                    className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-white/60 focus-visible:ring-roofing-teal tracking-wide" 
                     placeholder="Your Name" 
                     required
                   />
@@ -96,7 +96,7 @@ const Hero = () => {
                   <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-white/60 h-4 w-4" />
                   <Input 
                     type="email" 
-                    className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-white/60 focus-visible:ring-roofing-teal" 
+                    className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-white/60 focus-visible:ring-roofing-teal tracking-wide" 
                     placeholder="Email Address" 
                     required
                   />
@@ -107,7 +107,7 @@ const Hero = () => {
                   <Phone className="absolute left-3 top-1/2 -translate-y-1/2 text-white/60 h-4 w-4" />
                   <Input 
                     type="tel" 
-                    className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-white/60 focus-visible:ring-roofing-teal" 
+                    className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-white/60 focus-visible:ring-roofing-teal tracking-wide" 
                     placeholder="Phone Number" 
                     required
                   />
@@ -115,7 +115,7 @@ const Hero = () => {
               </div>
               <div>
                 <Textarea 
-                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60 focus-visible:ring-roofing-teal" 
+                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60 focus-visible:ring-roofing-teal tracking-wide" 
                   placeholder="Tell us about your project..." 
                   rows={4}
                   required
@@ -123,7 +123,7 @@ const Hero = () => {
               </div>
               <Button 
                 type="submit" 
-                className="w-full bg-roofing-teal hover:bg-roofing-teal/90 text-white"
+                className="w-full bg-roofing-teal hover:bg-roofing-teal/90 text-white tracking-wide"
               >
                 Submit Request
               </Button>
@@ -136,3 +136,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

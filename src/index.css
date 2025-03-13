@@ -84,11 +84,15 @@
   }
 
   body {
-    @apply bg-background text-foreground font-['Inter'];
+    @apply bg-background text-foreground font-['Inter'] tracking-wide;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-['Poppins'] font-semibold tracking-tight;
+  }
+
+  p {
+    @apply tracking-wide;
   }
 }
 
@@ -139,3 +143,4 @@
   opacity: 1;
   transform: translateY(0);
 }
+
