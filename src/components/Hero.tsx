@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight, User, Mail, Phone } from 'lucide-react';
 import { Input } from '@/components/ui/input';
@@ -53,19 +52,19 @@ const Hero = () => {
             {/* Stats Section */}
             <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4 mb-8 md:mb-0">
               <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
-                <span className="text-roofing-teal font-bold text-2xl md:text-3xl tracking-wide">20+</span>
+                <span className="text-[#33C3F0] font-bold text-2xl md:text-3xl tracking-wide">20+</span>
                 <span className="text-white text-xs md:text-sm text-center tracking-wide">Years Experience</span>
               </div>
               <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
-                <span className="text-roofing-teal font-bold text-2xl md:text-3xl tracking-wide">1,500+</span>
+                <span className="text-[#33C3F0] font-bold text-2xl md:text-3xl tracking-wide">1,500+</span>
                 <span className="text-white text-xs md:text-sm text-center tracking-wide">Projects Completed</span>
               </div>
               <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
-                <span className="text-roofing-teal font-bold text-2xl md:text-3xl tracking-wide">100%</span>
+                <span className="text-[#33C3F0] font-bold text-2xl md:text-3xl tracking-wide">100%</span>
                 <span className="text-white text-xs md:text-sm text-center tracking-wide">Satisfaction</span>
               </div>
               <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
-                <span className="text-roofing-teal font-bold text-2xl md:text-3xl tracking-wide">5-Year</span>
+                <span className="text-[#33C3F0] font-bold text-2xl md:text-3xl tracking-wide">5-Year</span>
                 <span className="text-white text-xs md:text-sm text-center tracking-wide">Warranty</span>
               </div>
             </div>
@@ -136,4 +135,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
