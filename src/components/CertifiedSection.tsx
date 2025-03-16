@@ -21,7 +21,7 @@ const CertifiedSection = () => {
           </div>
         </div>
         
-        <Separator className="bg-gray-200" />
+        
       </div>
     </section>;
 };
