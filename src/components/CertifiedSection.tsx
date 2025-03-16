@@ -11,7 +11,7 @@ const CertifiedSection = () => {
             <img alt="Fortified Roofing Certification" className="max-h-24 object-contain" src="/lovable-uploads/3adbd21d-5b3b-4fca-8613-325d1f2ca259.jpg" />
           </div>
           <div className="flex items-center justify-center w-full h-full">
-            <img src="/placeholder.svg" alt="Union MetalPro Contractor" className="max-h-24 object-contain" />
+            <img alt="Union MetalPro Contractor" className="max-h-24 object-contain" src="/lovable-uploads/64edb2ea-4fe2-4b16-94df-6d1d8a140244.png" />
           </div>
           <div className="flex items-center justify-center w-full h-full">
             <img src="/placeholder.svg" alt="Metal Roofing Alliance" className="max-h-24 object-contain" />
