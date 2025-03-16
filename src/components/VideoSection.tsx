@@ -35,10 +35,9 @@ const VideoSection = () => {
           
           {/* Video Section */}
           <div className="relative aspect-video bg-gray-100 rounded-lg overflow-hidden shadow-lg">
-            {/* YouTube placeholder - replace videoId with your actual YouTube video ID */}
             <iframe 
               className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/PLACEHOLDER_VIDEO_ID" 
+              src="https://www.youtube.com/embed/2mVJOFMHbFQ" 
               title="Roofing Contractor Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
