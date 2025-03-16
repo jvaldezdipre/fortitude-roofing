@@ -1,7 +1,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
@@ -133,6 +133,16 @@ const Projects = () => {
                 />
               </div>
             </div>
+          </div>
+          
+          {/* View All Projects Button */}
+          <div className="mt-12">
+            <Button 
+              className="bg-roofing-teal hover:bg-roofing-teal/90 text-white"
+              onClick={() => window.open('#', '_blank')}
+            >
+              View All Projects <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
           </div>
         </div>
       </div>
