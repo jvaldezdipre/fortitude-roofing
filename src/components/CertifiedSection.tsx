@@ -14,10 +14,10 @@ const CertifiedSection = () => {
             <img alt="Union MetalPro Contractor" className="max-h-24 object-contain" src="/lovable-uploads/64edb2ea-4fe2-4b16-94df-6d1d8a140244.png" />
           </div>
           <div className="flex items-center justify-center w-full h-full">
-            <img src="/placeholder.svg" alt="Metal Roofing Alliance" className="max-h-24 object-contain" />
+            <img alt="Metal Roofing Alliance" className="max-h-24 object-contain" src="/lovable-uploads/63a64c0d-d769-4207-bd16-41904a14e020.png" />
           </div>
           <div className="flex items-center justify-center w-full h-full">
-            <img src="/placeholder.svg" alt="Shingle Master Company" className="max-h-24 object-contain" />
+            <img alt="Shingle Master Company" className="max-h-24 object-contain" src="/lovable-uploads/83eefe0b-60d9-4d16-bca4-9173e0981fa5.jpg" />
           </div>
         </div>
         
