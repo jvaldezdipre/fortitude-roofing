@@ -1,6 +1,7 @@
 
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import CertifiedSection from "@/components/CertifiedSection";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
@@ -16,6 +17,7 @@ const Index = () => {
       <ScrollToTop />
       <Header />
       <Hero />
+      <CertifiedSection />
       <Services />
       <Projects />
       <Testimonials />
