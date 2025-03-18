@@ -28,7 +28,7 @@ const AboutHero = () => {
   }, []);
 
   return (
-    <section className="relative pt-20 pb-24 bg-roofing-charcoal text-white overflow-hidden">
+    <section className="relative pt-28 pb-24 bg-roofing-charcoal text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
