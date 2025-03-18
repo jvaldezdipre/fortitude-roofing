@@ -12,7 +12,7 @@ const services = [
     icon: Building2,
     title: 'Standing Seam Metal Roof',
     description: 'Premium standing seam metal roofing systems that offer superior durability, energy efficiency, and a sleek modern appearance for residential and commercial properties.',
-    image: '/lovable-uploads/55a161d7-92d1-4dac-9eec-91ef2844da9e.png'
+    image: '/lovable-uploads/c104633a-88cc-4061-b41e-60e84bb24f63.png'
   },
   {
     icon: Home,
