@@ -9,38 +9,41 @@ const ReviewsHero = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("opacity-100");
-            entry.target.classList.remove("translate-y-10");
+            entry.target.classList.add("visible");
           }
         });
       },
       { threshold: 0.1 }
     );
 
-    const currentRef = heroRef.current;
-
-    if (currentRef) {
-      observer.observe(currentRef);
+    if (heroRef.current) {
+      observer.observe(heroRef.current);
     }
 
     return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef);
+      if (heroRef.current) {
+        observer.unobserve(heroRef.current);
       }
     };
   }, []);
 
   return (
-    <div className="bg-roofing-charcoal text-white py-32 md:py-40">
-      <div className="container mx-auto px-4">
-        <div
-          ref={heroRef}
-          className="text-center max-w-4xl mx-auto opacity-0 translate-y-10 transition-all duration-1000 ease-out"
-        >
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
+    <section className="relative py-32 md:py-40 bg-roofing-charcoal text-white overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-gradient-to-r from-roofing-charcoal/90 to-roofing-charcoal/70 z-10"></div>
+        <img
+          src="/lovable-uploads/featured-image-roof.jpg"
+          alt="Customer Reviews"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        <div ref={heroRef} className="max-w-4xl mx-auto text-center staggered-fade-in">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 tracking-wide">
             Our Customer Reviews
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto tracking-wide">
             Don't just take our word for it. See what our satisfied customers have to say about our roofing services.
           </p>
           <div className="flex justify-center items-center gap-6 mb-8">
@@ -57,12 +60,12 @@ const ReviewsHero = () => {
               ))}
             </div>
             <span className="text-2xl font-bold">4.9/5</span>
-            <span className="text-gray-300 text-lg">based on 150+ reviews</span>
+            <span className="text-white/80 text-lg">based on 150+ reviews</span>
           </div>
           <div className="w-24 h-1.5 bg-roofing-teal mx-auto"></div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

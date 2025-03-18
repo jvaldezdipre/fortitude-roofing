@@ -30,8 +30,7 @@ const ServiceHero = () => {
   }, []);
 
   return (
-    <section className="relative py-32 md:py-40 overflow-hidden">
-      {/* Background with overlay */}
+    <section className="relative py-32 md:py-40 bg-roofing-charcoal text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-roofing-charcoal/90 to-roofing-charcoal/70 z-10"></div>
         <img
@@ -41,13 +40,12 @@ const ServiceHero = () => {
         />
       </div>
       
-      {/* Content */}
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div 
           ref={heroRef} 
           className="max-w-4xl mx-auto text-center staggered-fade-in"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-8 tracking-wide">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 tracking-wide">
             Professional Roofing Services
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto tracking-wide">
