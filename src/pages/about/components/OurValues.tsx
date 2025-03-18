@@ -48,13 +48,13 @@ const OurValues = () => {
             </div>
             <h3 className="text-xl font-semibold mb-3 text-center">Develop Leaders</h3>
             <p className="text-roofing-darkgray text-center mb-4">
-              Everyone has a different path and purpose in life. It is our duty to develop our employees into their best version of themselves. Our goal is to put the right people in the right positions so that they utilize their natural talents and find success in their endeavors.
+              Everyone has a different path and purpose in life. It is our duty to develop our employees into their best version of themselves.
             </p>
-            <p className="text-sm text-roofing-darkgray mb-1">We own our tasks, hold ourselves accountable, and admit mistakes.</p>
-            <p className="text-sm text-roofing-darkgray mb-1">We work as a team and value each other.</p>
-            <p className="text-sm text-roofing-darkgray mb-1">We lead with a positive, uplifting attitude at every minute of every day.</p>
-            <p className="text-sm text-roofing-darkgray mb-1">We find a silver lining when faced with a challenge.</p>
-            <p className="text-sm text-roofing-darkgray">We don't accept mediocrity.</p>
+            <ul className="text-sm text-roofing-darkgray list-disc pl-5 space-y-1">
+              <li>We own our tasks, hold ourselves accountable, and admit mistakes</li>
+              <li>We work as a team and value each other</li>
+              <li>We lead with a positive, uplifting attitude</li>
+            </ul>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
@@ -63,13 +63,13 @@ const OurValues = () => {
             </div>
             <h3 className="text-xl font-semibold mb-3 text-center">Unmatched Customer Experience</h3>
             <p className="text-roofing-darkgray text-center mb-4">
-              Customer experience is everything to us. The roofing industry is crowded and customers have a slew of choices when vetting contractors. We don't take their decision to use Fortitude Roofing for granted and we will continue to earn their business at every customer touchpoint.
+              Customer experience is everything to us. Our promise is to differentiate through superior customer service and superior craftsmanship.
             </p>
-            <p className="text-sm text-roofing-darkgray mb-1">We go the extra mile without being asked.</p>
-            <p className="text-sm text-roofing-darkgray mb-1">We do the right thing, even if it means operating at a loss.</p>
-            <p className="text-sm text-roofing-darkgray mb-1">If we can't do it right, we don't do it at all.</p>
-            <p className="text-sm text-roofing-darkgray mb-1">We educate - we don't sell.</p>
-            <p className="text-sm text-roofing-darkgray">We set proper expectations, and we deliver on our promises.</p>
+            <ul className="text-sm text-roofing-darkgray list-disc pl-5 space-y-1">
+              <li>We go the extra mile without being asked</li>
+              <li>We do the right thing, even if it means operating at a loss</li>
+              <li>We educate - we don't sell</li>
+            </ul>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
@@ -78,10 +78,13 @@ const OurValues = () => {
             </div>
             <h3 className="text-xl font-semibold mb-3 text-center">Impact Our Community</h3>
             <p className="text-roofing-darkgray text-center mb-4">
-              Fortitude is more than just a roofing company. We will better our communities through the work we do, and we will look for ways to give back each & every day. Our service area is our backyard. This is where our children go to school. It is our responsibility to leave it better than we find it.
+              Fortitude is more than just a roofing company. We will better our communities through the work we do, and we will look for ways to give back each & every day.
             </p>
-            <p className="text-sm text-roofing-darkgray mb-1">Portions of job proceeds get donated regularly to charity and community endeavors.</p>
-            <p className="text-sm text-roofing-darkgray">We volunteer our time to community service.</p>
+            <ul className="text-sm text-roofing-darkgray list-disc pl-5 space-y-1">
+              <li>Portions of job proceeds get donated regularly to charity</li>
+              <li>We volunteer our time to community service</li>
+              <li>We leave our community better than we find it</li>
+            </ul>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
