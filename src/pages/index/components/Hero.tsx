@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, User, Mail, Phone } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 /**
  * Hero component
@@ -11,6 +11,30 @@ import { useState } from "react";
  */
 const Hero = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const heroRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (heroRef.current) {
+      observer.observe(heroRef.current);
+    }
+
+    return () => {
+      if (heroRef.current) {
+        observer.unobserve(heroRef.current);
+      }
+    };
+  }, []);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -35,70 +59,72 @@ const Hero = () => {
       <div className="container mx-auto px-4 lg:px-8 relative z-10 py-12 md:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Column - Main Hero Content */}
-          <div className="mt-16 md:mt-8 lg:mt-0">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-tight mb-4 tracking-wide">
-              Quality Roofing Solutions You Can Trust
-            </h1>
-            <p className="text-base md:text-lg text-white/90 mb-6 md:mb-8 max-w-2xl tracking-wide">
-              With over 20 years of experience, we deliver exceptional roofing
-              services for residential and commercial properties across the
-              region.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-8 md:mb-12">
-              <Button
-                size="lg"
-                className="bg-roofing-teal hover:bg-roofing-teal/90 text-white px-8 tracking-wide"
-              >
-                Get a Free Quote
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-white text-white hover:bg-white/10 tracking-wide"
-              >
-                Our Services <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </div>
+          <div className="mt-16 md:mt-8 lg:mt-0" ref={heroRef}>
+            <div className="staggered-fade-in">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-tight mb-4 tracking-wide">
+                Quality Roofing Solutions You Can Trust
+              </h1>
+              <p className="text-base md:text-lg text-white/90 mb-6 md:mb-8 max-w-2xl tracking-wide">
+                With over 20 years of experience, we deliver exceptional roofing
+                services for residential and commercial properties across the
+                region.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 mb-8 md:mb-12">
+                <Button
+                  size="lg"
+                  className="bg-roofing-teal hover:bg-roofing-teal/90 text-white px-8 tracking-wide"
+                >
+                  Get a Free Quote
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-white text-white hover:bg-white/10 tracking-wide"
+                >
+                  Our Services <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
 
-            {/* Stats Section */}
-            <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4 mb-8 md:mb-0">
-              <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
-                <span className="text-[#D3E4FD] font-bold text-2xl md:text-3xl tracking-wide">
-                  20+
-                </span>
-                <span className="text-white text-xs md:text-sm text-center tracking-wide">
-                  Years Experience
-                </span>
-              </div>
-              <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
-                <span className="text-[#D3E4FD] font-bold text-2xl md:text-3xl tracking-wide">
-                  1,500+
-                </span>
-                <span className="text-white text-xs md:text-sm text-center tracking-wide">
-                  Projects Completed
-                </span>
-              </div>
-              <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
-                <span className="text-[#D3E4FD] font-bold text-2xl md:text-3xl tracking-wide">
-                  100%
-                </span>
-                <span className="text-white text-xs md:text-sm text-center tracking-wide">
-                  Satisfaction
-                </span>
-              </div>
-              <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
-                <span className="text-[#D3E4FD] font-bold text-2xl md:text-3xl tracking-wide">
-                  5-Year
-                </span>
-                <span className="text-white text-xs md:text-sm text-center tracking-wide">
-                  Warranty
-                </span>
+              {/* Stats Section */}
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4 mb-8 md:mb-0">
+                <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
+                  <span className="text-[#D3E4FD] font-bold text-2xl md:text-3xl tracking-wide">
+                    20+
+                  </span>
+                  <span className="text-white text-xs md:text-sm text-center tracking-wide">
+                    Years Experience
+                  </span>
+                </div>
+                <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
+                  <span className="text-[#D3E4FD] font-bold text-2xl md:text-3xl tracking-wide">
+                    1,500+
+                  </span>
+                  <span className="text-white text-xs md:text-sm text-center tracking-wide">
+                    Projects Completed
+                  </span>
+                </div>
+                <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
+                  <span className="text-[#D3E4FD] font-bold text-2xl md:text-3xl tracking-wide">
+                    100%
+                  </span>
+                  <span className="text-white text-xs md:text-sm text-center tracking-wide">
+                    Satisfaction
+                  </span>
+                </div>
+                <div className="flex flex-col items-center bg-white/10 backdrop-blur-sm px-3 py-3 rounded-md">
+                  <span className="text-[#D3E4FD] font-bold text-2xl md:text-3xl tracking-wide">
+                    5-Year
+                  </span>
+                  <span className="text-white text-xs md:text-sm text-center tracking-wide">
+                    Warranty
+                  </span>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="bg-white/10 backdrop-blur-sm p-5 md:p-6 rounded-lg border border-white/20 max-w-md mx-auto lg:ml-auto w-full mt-8 md:mt-12 lg:mt-0">
+          <div className="bg-white/10 backdrop-blur-sm p-5 md:p-6 rounded-lg border border-white/20 max-w-md mx-auto lg:ml-auto w-full mt-8 md:mt-12 lg:mt-0 animate-on-scroll">
             <h2 className="text-xl md:text-2xl font-bold text-white mb-4 tracking-wide">
               Request a Free Quote
             </h2>

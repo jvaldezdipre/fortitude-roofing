@@ -1,3 +1,5 @@
+
+import { useEffect } from "react";
 import Hero from "@/pages/index/components/Hero";
 import CertifiedSection from "@/pages/index/components/CertifiedSection";
 import VideoSection from "@/pages/index/components/VideoSection";
@@ -12,6 +14,11 @@ import Contact from "@/components/Contact";
  * Shows the home page of the website
  */
 const Index = () => {
+  useEffect(() => {
+    // Scroll to top on page load
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="overflow-x-hidden">
       <Hero />
