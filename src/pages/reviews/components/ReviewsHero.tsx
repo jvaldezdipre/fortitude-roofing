@@ -31,24 +31,24 @@ const ReviewsHero = () => {
   }, []);
 
   return (
-    <div className="bg-roofing-charcoal text-white py-20 md:py-28">
+    <div className="bg-roofing-charcoal text-white py-32 md:py-40">
       <div className="container mx-auto px-4">
         <div
           ref={heroRef}
-          className="text-center max-w-3xl mx-auto opacity-0 translate-y-10 transition-all duration-1000 ease-out"
+          className="text-center max-w-4xl mx-auto opacity-0 translate-y-10 transition-all duration-1000 ease-out"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
             Our Customer Reviews
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 mb-8">
+          <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
             Don't just take our word for it. See what our satisfied customers have to say about our roofing services.
           </p>
-          <div className="flex justify-center items-center gap-4 mb-6">
+          <div className="flex justify-center items-center gap-6 mb-8">
             <div className="flex">
               {[...Array(5)].map((_, i) => (
                 <svg 
                   key={i} 
-                  className="w-6 h-6 text-roofing-teal fill-current" 
+                  className="w-8 h-8 text-roofing-teal fill-current" 
                   xmlns="http://www.w3.org/2000/svg" 
                   viewBox="0 0 24 24"
                 >
@@ -56,10 +56,10 @@ const ReviewsHero = () => {
                 </svg>
               ))}
             </div>
-            <span className="text-xl font-bold">4.9/5</span>
-            <span className="text-gray-300">based on 150+ reviews</span>
+            <span className="text-2xl font-bold">4.9/5</span>
+            <span className="text-gray-300 text-lg">based on 150+ reviews</span>
           </div>
-          <div className="w-20 h-1 bg-roofing-teal mx-auto"></div>
+          <div className="w-24 h-1.5 bg-roofing-teal mx-auto"></div>
         </div>
       </div>
     </div>

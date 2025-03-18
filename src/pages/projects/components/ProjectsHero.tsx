@@ -30,8 +30,8 @@ const ProjectsHero = () => {
   }, []);
 
   return (
-    <div className="relative bg-roofing-charcoal py-20 md:py-24">
-      <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30 z-10"></div>
+    <div className="relative bg-roofing-charcoal py-32 md:py-40">
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40 z-10"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('/lovable-uploads/featured-image-roof.jpg')" }}
@@ -39,16 +39,16 @@ const ProjectsHero = () => {
       <div className="container relative z-20">
         <div 
           ref={heroRef} 
-          className="max-w-3xl mx-auto text-center staggered-fade-in"
+          className="max-w-4xl mx-auto text-center staggered-fade-in"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8">
             Our Roofing Projects
           </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-8">
+          <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto">
             Explore our completed projects across the region. Click on the map markers to view details about each project.
           </p>
           <Button 
-            className="bg-roofing-teal hover:bg-roofing-teal/90 text-white"
+            className="bg-roofing-teal hover:bg-roofing-teal/90 text-white px-10 py-7 text-lg"
             onClick={() => {
               const mapSection = document.getElementById('projects-map');
               if (mapSection) {
@@ -56,7 +56,7 @@ const ProjectsHero = () => {
               }
             }}
           >
-            View Project Map <ArrowRight className="ml-2 h-4 w-4" />
+            View Project Map <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
       </div>
