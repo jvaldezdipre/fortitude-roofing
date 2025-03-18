@@ -49,7 +49,7 @@ const OurValues = () => {
             </div>
             <h3 className="text-2xl font-semibold mb-3 text-center">Develop Leaders</h3>
             <p className="text-roofing-darkgray mb-6 text-center">
-              Everyone has a different path and purpose in life. We develop our employees into their best version of themselves.
+              Everyone has a different path and purpose in life. As such, it is our duty to develop our employees into their best version of themselves. Our goal is to put the right people in the right positions so that they utilize their natural talents and find success in their endeavors.
             </p>
             
             <div className="space-y-3 mt-6">
@@ -93,7 +93,7 @@ const OurValues = () => {
             </div>
             <h3 className="text-2xl font-semibold mb-3 text-center">Provide an Unmatched Customer Experience</h3>
             <p className="text-roofing-darkgray mb-6 text-center">
-              Customer experience is everything to us. Our promise is to differentiate through superior customer service and superior craftsmanship.
+              Customer experience is everything to us. The roofing industry is crowded and customers have a slew of choices when vetting contractors. We don't take their decision to use us for granted and we will continue to earn their business at every customer touchpoint.
             </p>
             
             <div className="space-y-3 mt-6">
@@ -137,7 +137,7 @@ const OurValues = () => {
             </div>
             <h3 className="text-2xl font-semibold mb-3 text-center">Impact our Community</h3>
             <p className="text-roofing-darkgray mb-6 text-center">
-              Fortitude is more than just a roofing company. We will better our communities through the work we do, and we will look for ways to give back each & every day.
+              We are more than just a roofing company. We will better our communities through the work we do, and we will look for ways to give back each & every day. Our service area is our backyard. This is where our children go to school.
             </p>
             
             <div className="space-y-3 mt-6">
