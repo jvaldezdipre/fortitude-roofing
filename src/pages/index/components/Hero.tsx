@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-roofing-charcoal/90 to-roofing-charcoal/70 z-10"></div>
         <img
-          src="/lovable-uploads/c104633a-88cc-4061-b41e-60e84bb24f63.png"
+          src="/lovable-uploads/Shingle+Roof+Replacement.jpg"
           alt="Aerial view of modern white roof with pool"
           className="w-full h-full object-cover"
         />
