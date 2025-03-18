@@ -1,6 +1,6 @@
 
 import { useRef, useEffect } from "react";
-import { Award, Users, Heart, Recycle, Shield, Zap } from "lucide-react";
+import { Award, Users, Heart } from "lucide-react";
 
 const OurValues = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -69,36 +69,6 @@ const OurValues = () => {
             <h3 className="text-xl font-semibold mb-3 text-center">Impact Our Community</h3>
             <p className="text-roofing-darkgray text-center mb-4">
               Fortitude is more than just a roofing company. We will better our communities through the work we do, and we will look for ways to give back each & every day.
-            </p>
-          </div>
-
-          <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-roofing-teal/10 text-roofing-teal mb-6 mx-auto">
-              <Shield className="h-8 w-8" />
-            </div>
-            <h3 className="text-xl font-semibold mb-3 text-center">Quality & Integrity</h3>
-            <p className="text-roofing-darkgray text-center">
-              We never compromise on quality and always operate with complete transparency and honesty in every aspect of our business.
-            </p>
-          </div>
-
-          <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-roofing-teal/10 text-roofing-teal mb-6 mx-auto">
-              <Zap className="h-8 w-8" />
-            </div>
-            <h3 className="text-xl font-semibold mb-3 text-center">Innovation</h3>
-            <p className="text-roofing-darkgray text-center">
-              We continually seek to improve our methods and services by staying at the forefront of industry advancements and technologies.
-            </p>
-          </div>
-
-          <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-roofing-teal/10 text-roofing-teal mb-6 mx-auto">
-              <Recycle className="h-8 w-8" />
-            </div>
-            <h3 className="text-xl font-semibold mb-3 text-center">Sustainability</h3>
-            <p className="text-roofing-darkgray text-center">
-              We're committed to environmentally responsible practices, including proper disposal of old materials and offering energy-efficient roofing solutions.
             </p>
           </div>
         </div>
