@@ -14,6 +14,12 @@ const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Make the hero visible immediately on mount
+    if (heroRef.current) {
+      heroRef.current.classList.add('visible');
+    }
+    
+    // Add animation observer for scrolling behavior
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -60,7 +66,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Column - Main Hero Content */}
           <div className="mt-16 md:mt-8 lg:mt-0" ref={heroRef}>
-            <div className="staggered-fade-in">
+            <div className="staggered-fade-in visible">
               <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-tight mb-4 tracking-wide">
                 Quality Roofing Solutions You Can Trust
               </h1>
@@ -124,7 +130,7 @@ const Hero = () => {
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="bg-white/10 backdrop-blur-sm p-5 md:p-6 rounded-lg border border-white/20 max-w-md mx-auto lg:ml-auto w-full mt-8 md:mt-12 lg:mt-0 animate-on-scroll">
+          <div className="bg-white/10 backdrop-blur-sm p-5 md:p-6 rounded-lg border border-white/20 max-w-md mx-auto lg:ml-auto w-full mt-8 md:mt-12 lg:mt-0 animate-on-scroll visible">
             <h2 className="text-xl md:text-2xl font-bold text-white mb-4 tracking-wide">
               Request a Free Quote
             </h2>
