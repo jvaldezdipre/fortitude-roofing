@@ -182,10 +182,10 @@ const Trust = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-4">Our Commitment to Excellence</h3>
               <p className="text-roofing-darkgray mb-4">
-                At PeakRoof, we believe that quality craftsmanship and exceptional service are the foundation of a successful roofing company. Our team is committed to delivering the highest standards in every project we undertake.
+                We promise to lead our industry through continuous improvement in employee development, installing exemplary products, and offering the best customer experience a Roofing Company can provide.
               </p>
               <p className="text-roofing-darkgray">
-                From the initial consultation to the final inspection, we ensure clear communication, attention to detail, and a clean, safe work environment. Our goal is to exceed your expectations and provide a roofing solution that offers lasting protection and value for your property.
+                At PeakRoof, we believe that our success begins with our dedicated team. We invest in ongoing training and certification for our staff, ensuring that every project benefits from the latest industry knowledge and techniques. This commitment to quality extends to every aspect of our service - from the materials we select to our installation procedures and customer communication.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
