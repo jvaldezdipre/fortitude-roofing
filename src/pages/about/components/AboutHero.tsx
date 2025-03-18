@@ -28,7 +28,7 @@ const AboutHero = () => {
   }, []);
 
   return (
-    <section className="relative pt-28 pb-24 bg-roofing-charcoal text-white overflow-hidden">
+    <section className="relative pt-36 pb-24 bg-roofing-charcoal text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -40,7 +40,7 @@ const AboutHero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black via-roofing-charcoal/90 to-roofing-charcoal" />
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 mt-8">
         <div ref={heroRef} className="max-w-3xl mx-auto text-center staggered-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
             About PeakRoof
