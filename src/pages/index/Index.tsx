@@ -19,43 +19,24 @@ const Index = () => {
     // Scroll to top on page load
     window.scrollTo(0, 0);
     
-    // Trigger animations immediately for all home page sections
-    const animatedElements = document.querySelectorAll('.staggered-fade-in, .animate-on-scroll, .home-entrance-animation');
-    animatedElements.forEach((element, index) => {
-      // Add a slight delay to create a cascading effect
-      setTimeout(() => {
-        element.classList.add('visible');
-      }, index * 150); // 150ms delay between each element
+    // Trigger animations immediately for hero section
+    const animatedElements = document.querySelectorAll('.staggered-fade-in');
+    animatedElements.forEach(element => {
+      element.classList.add('visible');
     });
   }, []);
 
   return (
     <div className="overflow-x-hidden">
       <ScrollToTop />
-      <div className="home-entrance-animation">
-        <Hero />
-      </div>
-      <div className="home-entrance-animation">
-        <CertifiedSection />
-      </div>
-      <div className="home-entrance-animation">
-        <VideoSection />
-      </div>
-      <div className="home-entrance-animation">
-        <Services />
-      </div>
-      <div className="home-entrance-animation">
-        <Projects />
-      </div>
-      <div className="home-entrance-animation">
-        <Testimonials />
-      </div>
-      <div className="home-entrance-animation">
-        <Trust />
-      </div>
-      <div className="home-entrance-animation">
-        <Contact />
-      </div>
+      <Hero />
+      <CertifiedSection />
+      <VideoSection />
+      <Services />
+      <Projects />
+      <Testimonials />
+      <Trust />
+      <Contact />
     </div>
   );
 };
