@@ -30,17 +30,19 @@ const ProjectsHero = () => {
   }, []);
 
   return (
-    <section className="relative py-32 md:py-40 bg-roofing-charcoal text-white overflow-hidden">
+    <section className="relative pt-48 pb-32 bg-roofing-charcoal text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-roofing-charcoal/90 to-roofing-charcoal/70 z-10"></div>
-        <img
-          src="/lovable-uploads/featured-image-roof.jpg"
-          alt="Roofing Projects"
-          className="w-full h-full object-cover"
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{
+            backgroundImage:
+              "url('/lovable-uploads/featured-image-roof.jpg')",
+          }}
         />
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-roofing-charcoal/90 to-roofing-charcoal" />
       </div>
       
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 mt-12">
         <div ref={heroRef} className="max-w-4xl mx-auto text-center staggered-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 tracking-wide">
             Our Roofing Projects
