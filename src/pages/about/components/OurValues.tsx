@@ -45,7 +45,7 @@ const OurValues = () => {
           <Card className="overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow bg-white">
             <div className="flex flex-col lg:flex-row">
               {/* Left side - Paragraph */}
-              <div className="p-8 lg:w-1/2">
+              <div className="p-8 lg:w-1/2 flex flex-col justify-center">
                 <div className="flex items-center justify-center w-16 h-16 rounded-full bg-roofing-teal/10 text-roofing-teal mb-6 lg:hidden">
                   <Users className="h-8 w-8" />
                 </div>
@@ -94,7 +94,7 @@ const OurValues = () => {
           <Card className="overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow bg-white">
             <div className="flex flex-col lg:flex-row">
               {/* Left side - Paragraph */}
-              <div className="p-8 lg:w-1/2">
+              <div className="p-8 lg:w-1/2 flex flex-col justify-center">
                 <div className="flex items-center justify-center w-16 h-16 rounded-full bg-roofing-teal/10 text-roofing-teal mb-6 lg:hidden">
                   <Award className="h-8 w-8" />
                 </div>
@@ -143,7 +143,7 @@ const OurValues = () => {
           <Card className="overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow bg-white">
             <div className="flex flex-col lg:flex-row">
               {/* Left side - Paragraph */}
-              <div className="p-8 lg:w-1/2">
+              <div className="p-8 lg:w-1/2 flex flex-col justify-center">
                 <div className="flex items-center justify-center w-16 h-16 rounded-full bg-roofing-teal/10 text-roofing-teal mb-6 lg:hidden">
                   <Heart className="h-8 w-8" />
                 </div>
