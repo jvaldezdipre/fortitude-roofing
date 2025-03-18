@@ -1,6 +1,6 @@
 
 import { useRef, useEffect } from "react";
-import { Users, Heart, Star } from "lucide-react";
+import { Shield, Award, Users, Zap, Heart, Recycle } from "lucide-react";
 
 const OurValues = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -40,126 +40,66 @@ const OurValues = () => {
 
         <div
           ref={sectionRef}
-          className="grid grid-cols-1 gap-12 staggered-fade-in"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 staggered-fade-in"
         >
-          {/* Develop Leaders */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <div className="flex items-center justify-center w-20 h-20 rounded-full bg-roofing-teal/10 text-roofing-teal mb-6 mx-auto">
-              <Users className="h-10 w-10" />
+          <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-roofing-teal/10 text-roofing-teal mb-6 mx-auto">
+              <Shield className="h-8 w-8" />
             </div>
-            <h3 className="text-2xl font-semibold mb-3 text-center">Develop Leaders</h3>
-            <p className="text-roofing-darkgray mb-6 text-center">
-              Everyone has a different path and purpose in life. As such, it is our duty to develop our employees into their best version of themselves. Our goal is to put the right people in the right positions so that they utilize their natural talents and find success in their endeavors.
+            <h3 className="text-xl font-semibold mb-3 text-center">Quality & Integrity</h3>
+            <p className="text-roofing-darkgray text-center">
+              We never compromise on quality and always operate with complete transparency and honesty in every aspect of our business.
             </p>
-            
-            <div className="space-y-3 mt-6">
-              <div className="flex items-start">
-                <div className="bg-roofing-teal/10 p-2 rounded-full mr-3 mt-1">
-                  <div className="w-2 h-2 bg-roofing-teal rounded-full"></div>
-                </div>
-                <p className="text-roofing-darkgray">We own our tasks, hold ourselves accountable, and admit mistakes.</p>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-roofing-teal/10 p-2 rounded-full mr-3 mt-1">
-                  <div className="w-2 h-2 bg-roofing-teal rounded-full"></div>
-                </div>
-                <p className="text-roofing-darkgray">We work as a team and value each other.</p>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-roofing-teal/10 p-2 rounded-full mr-3 mt-1">
-                  <div className="w-2 h-2 bg-roofing-teal rounded-full"></div>
-                </div>
-                <p className="text-roofing-darkgray">We lead with a positive, uplifting attitude at every minute of every day.</p>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-roofing-teal/10 p-2 rounded-full mr-3 mt-1">
-                  <div className="w-2 h-2 bg-roofing-teal rounded-full"></div>
-                </div>
-                <p className="text-roofing-darkgray">We find a silver lining when faced with a challenge.</p>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-roofing-teal/10 p-2 rounded-full mr-3 mt-1">
-                  <div className="w-2 h-2 bg-roofing-teal rounded-full"></div>
-                </div>
-                <p className="text-roofing-darkgray">We don't accept mediocrity.</p>
-              </div>
-            </div>
           </div>
 
-          {/* Provide an Unmatched Customer Experience */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <div className="flex items-center justify-center w-20 h-20 rounded-full bg-roofing-teal/10 text-roofing-teal mb-6 mx-auto">
-              <Star className="h-10 w-10" />
+          <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-roofing-teal/10 text-roofing-teal mb-6 mx-auto">
+              <Award className="h-8 w-8" />
             </div>
-            <h3 className="text-2xl font-semibold mb-3 text-center">Provide an Unmatched Customer Experience</h3>
-            <p className="text-roofing-darkgray mb-6 text-center">
-              Customer experience is everything to us. The roofing industry is crowded and customers have a slew of choices when vetting contractors. We don't take their decision to use us for granted and we will continue to earn their business at every customer touchpoint.
+            <h3 className="text-xl font-semibold mb-3 text-center">Excellence</h3>
+            <p className="text-roofing-darkgray text-center">
+              We strive for excellence in everything we do, from customer service to workmanship, always aiming to exceed expectations.
             </p>
-            
-            <div className="space-y-3 mt-6">
-              <div className="flex items-start">
-                <div className="bg-roofing-teal/10 p-2 rounded-full mr-3 mt-1">
-                  <div className="w-2 h-2 bg-roofing-teal rounded-full"></div>
-                </div>
-                <p className="text-roofing-darkgray">We go the extra mile without being asked.</p>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-roofing-teal/10 p-2 rounded-full mr-3 mt-1">
-                  <div className="w-2 h-2 bg-roofing-teal rounded-full"></div>
-                </div>
-                <p className="text-roofing-darkgray">We do the right thing, even if it means operating at a loss.</p>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-roofing-teal/10 p-2 rounded-full mr-3 mt-1">
-                  <div className="w-2 h-2 bg-roofing-teal rounded-full"></div>
-                </div>
-                <p className="text-roofing-darkgray">If we can't do it right, we don't do it at all.</p>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-roofing-teal/10 p-2 rounded-full mr-3 mt-1">
-                  <div className="w-2 h-2 bg-roofing-teal rounded-full"></div>
-                </div>
-                <p className="text-roofing-darkgray">We educate - we don't sell.</p>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-roofing-teal/10 p-2 rounded-full mr-3 mt-1">
-                  <div className="w-2 h-2 bg-roofing-teal rounded-full"></div>
-                </div>
-                <p className="text-roofing-darkgray">We set proper expectations, and we deliver on our promises.</p>
-              </div>
-            </div>
           </div>
 
-          {/* Impact our Community */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <div className="flex items-center justify-center w-20 h-20 rounded-full bg-roofing-teal/10 text-roofing-teal mb-6 mx-auto">
-              <Heart className="h-10 w-10" />
+          <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-roofing-teal/10 text-roofing-teal mb-6 mx-auto">
+              <Users className="h-8 w-8" />
             </div>
-            <h3 className="text-2xl font-semibold mb-3 text-center">Impact our Community</h3>
-            <p className="text-roofing-darkgray mb-6 text-center">
-              We are more than just a roofing company. We will better our communities through the work we do, and we will look for ways to give back each & every day. Our service area is our backyard. This is where our children go to school.
+            <h3 className="text-xl font-semibold mb-3 text-center">Customer First</h3>
+            <p className="text-roofing-darkgray text-center">
+              We prioritize our customers' needs and satisfaction above all else, ensuring that every project meets their specific requirements.
             </p>
-            
-            <div className="space-y-3 mt-6">
-              <div className="flex items-start">
-                <div className="bg-roofing-teal/10 p-2 rounded-full mr-3 mt-1">
-                  <div className="w-2 h-2 bg-roofing-teal rounded-full"></div>
-                </div>
-                <p className="text-roofing-darkgray">Portions of job proceeds get donated regularly to charity and community endeavors.</p>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-roofing-teal/10 p-2 rounded-full mr-3 mt-1">
-                  <div className="w-2 h-2 bg-roofing-teal rounded-full"></div>
-                </div>
-                <p className="text-roofing-darkgray">We volunteer our time to community service.</p>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-roofing-teal/10 p-2 rounded-full mr-3 mt-1">
-                  <div className="w-2 h-2 bg-roofing-teal rounded-full"></div>
-                </div>
-                <p className="text-roofing-darkgray">Our service area is our backyard. This is where our children go to school. It is our responsibility to leave it better than we find it.</p>
-              </div>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-roofing-teal/10 text-roofing-teal mb-6 mx-auto">
+              <Zap className="h-8 w-8" />
             </div>
+            <h3 className="text-xl font-semibold mb-3 text-center">Innovation</h3>
+            <p className="text-roofing-darkgray text-center">
+              We continually seek to improve our methods and services by staying at the forefront of industry advancements and technologies.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-roofing-teal/10 text-roofing-teal mb-6 mx-auto">
+              <Heart className="h-8 w-8" />
+            </div>
+            <h3 className="text-xl font-semibold mb-3 text-center">Community Impact</h3>
+            <p className="text-roofing-darkgray text-center">
+              We're dedicated to making a positive impact in our community through charitable work, support of local initiatives, and responsible business practices.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex items-center justify-center w-16 h-16 rounded-full bg-roofing-teal/10 text-roofing-teal mb-6 mx-auto">
+              <Recycle className="h-8 w-8" />
+            </div>
+            <h3 className="text-xl font-semibold mb-3 text-center">Sustainability</h3>
+            <p className="text-roofing-darkgray text-center">
+              We're committed to environmentally responsible practices, including proper disposal of old materials and offering energy-efficient roofing solutions.
+            </p>
           </div>
         </div>
       </div>
