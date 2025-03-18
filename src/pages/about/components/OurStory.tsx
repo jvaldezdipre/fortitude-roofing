@@ -1,5 +1,7 @@
 
 import { useRef, useEffect } from "react";
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import { Award } from "lucide-react";
 
 const OurStory = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -72,24 +74,71 @@ const OurStory = () => {
         </div>
 
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="p-6 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
-            <h4 className="text-xl font-semibold mb-3">Our Beginnings</h4>
-            <p className="text-roofing-darkgray">
-              Started as a family business in 2003 with a focus on residential roofing repair and maintenance.
-            </p>
-          </div>
-          <div className="p-6 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
-            <h4 className="text-xl font-semibold mb-3">Growth Years</h4>
-            <p className="text-roofing-darkgray">
-              Expanded services to include commercial roofing and specialized in storm damage restoration from 2010-2015.
-            </p>
-          </div>
-          <div className="p-6 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
-            <h4 className="text-xl font-semibold mb-3">Today</h4>
-            <p className="text-roofing-darkgray">
-              A comprehensive roofing company with expert teams dedicated to both residential and commercial projects.
-            </p>
-          </div>
+          <Card className="overflow-hidden transition-all hover:shadow-lg">
+            <div className="h-48 overflow-hidden">
+              <img 
+                src="/lovable-uploads/FORTIFIED-Banner.jpg" 
+                alt="FORTIFIED Certification" 
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+            <CardHeader className="flex flex-row items-center gap-2">
+              <Award className="text-roofing-teal" />
+              <h4 className="text-xl font-semibold">FORTIFIED Certified</h4>
+            </CardHeader>
+            <CardContent>
+              <p className="text-roofing-darkgray">
+                Our FORTIFIED certification ensures we build roofs that meet the highest standards for weather resistance and durability.
+              </p>
+            </CardContent>
+            <CardFooter className="text-sm text-muted-foreground">
+              Certified since 2010
+            </CardFooter>
+          </Card>
+          
+          <Card className="overflow-hidden transition-all hover:shadow-lg">
+            <div className="h-48 overflow-hidden">
+              <img 
+                src="/lovable-uploads/83eefe0b-60d9-4d16-bca4-9173e0981fa5.jpg" 
+                alt="GAF Master Elite Certification" 
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+            <CardHeader className="flex flex-row items-center gap-2">
+              <Award className="text-roofing-teal" />
+              <h4 className="text-xl font-semibold">GAF Master Elite</h4>
+            </CardHeader>
+            <CardContent>
+              <p className="text-roofing-darkgray">
+                As GAF Master Elite contractors, we represent the top 2% of roofing contractors nationwide for quality and expertise.
+              </p>
+            </CardContent>
+            <CardFooter className="text-sm text-muted-foreground">
+              Awarded in 2015
+            </CardFooter>
+          </Card>
+          
+          <Card className="overflow-hidden transition-all hover:shadow-lg">
+            <div className="h-48 overflow-hidden">
+              <img 
+                src="/lovable-uploads/Shingle+Roof+Replacement.jpg" 
+                alt="Owens Corning Platinum Certification" 
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+            <CardHeader className="flex flex-row items-center gap-2">
+              <Award className="text-roofing-teal" />
+              <h4 className="text-xl font-semibold">Owens Corning Platinum</h4>
+            </CardHeader>
+            <CardContent>
+              <p className="text-roofing-darkgray">
+                Our Owens Corning Platinum Preferred status means we can offer the industry's best warranties and highest quality materials.
+              </p>
+            </CardContent>
+            <CardFooter className="text-sm text-muted-foreground">
+              Platinum status since 2018
+            </CardFooter>
+          </Card>
         </div>
       </div>
     </section>
