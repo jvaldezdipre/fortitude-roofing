@@ -100,21 +100,21 @@ const OurStory = () => {
             <div className="h-48 overflow-hidden">
               <img 
                 src="/lovable-uploads/83eefe0b-60d9-4d16-bca4-9173e0981fa5.jpg" 
-                alt="GAF Master Elite Certification" 
+                alt="Certainteed Shingle Master Certification" 
                 className="w-full h-full object-cover object-center"
               />
             </div>
             <CardHeader className="flex flex-row items-center gap-2">
               <Award className="text-roofing-teal" />
-              <h4 className="text-xl font-semibold">GAF Master Elite</h4>
+              <h4 className="text-xl font-semibold">Certainteed Shingle Master</h4>
             </CardHeader>
             <CardContent>
               <p className="text-roofing-darkgray">
-                As GAF Master Elite contractors, we represent the top 2% of roofing contractors nationwide for quality and expertise.
+                As Certainteed Shingle Masters and Shingle Quality Specialists, we're qualified to offer the industry's most comprehensive warranties and highest quality shingle installations.
               </p>
             </CardContent>
             <CardFooter className="text-sm text-muted-foreground">
-              Awarded in 2015
+              Certified since 2015
             </CardFooter>
           </Card>
           
