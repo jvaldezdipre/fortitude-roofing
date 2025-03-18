@@ -19,6 +19,13 @@ const defaultCenter = {
   lng: -84.3877
 };
 
+// IMPORTANT: Replace this with your actual Google Maps API key
+// Get it from: https://console.cloud.google.com/
+// 1. Create a project
+// 2. Enable Maps JavaScript API
+// 3. Create API credentials
+const GOOGLE_MAPS_API_KEY = "YOUR_GOOGLE_MAPS_API_KEY";
+
 const ProjectsMap = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [activeInfoWindow, setActiveInfoWindow] = useState<number | null>(null);
@@ -26,8 +33,8 @@ const ProjectsMap = () => {
 
   // Use the useLoadScript hook instead of LoadScript component
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "YOUR_GOOGLE_MAPS_API_KEY",
-    // Note: Replace with actual API key in production
+    googleMapsApiKey: GOOGLE_MAPS_API_KEY,
+    // For production, restrict to your domain in Google Cloud Console
   });
 
   // Check if device is mobile
@@ -86,7 +93,8 @@ const ProjectsMap = () => {
       <section id="projects-map" className="container py-12 md:py-16">
         <h2 className="text-3xl font-bold text-center mb-8">Our Project Locations</h2>
         <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
-          <p className="text-red-600">Error loading map. Please check your connection and try again.</p>
+          <p className="text-red-600">Error loading map: {loadError.message || "Please check your Google Maps API key"}</p>
+          <p className="mt-2 text-gray-600">Make sure you've replaced "YOUR_GOOGLE_MAPS_API_KEY" with a valid API key from Google Cloud Console.</p>
         </div>
         
         {/* Still show the project list even if map fails to load */}
@@ -163,3 +171,4 @@ const ProjectsMap = () => {
 };
 
 export default ProjectsMap;
+
