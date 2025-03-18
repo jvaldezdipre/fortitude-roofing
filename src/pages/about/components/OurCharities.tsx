@@ -1,3 +1,4 @@
+
 import { useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -85,7 +86,7 @@ const OurCharities = () => {
                 <img
                   src={charities[0].image}
                   alt={charities[0].name}
-                  className="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300"
+                  className="w-full h-72 object-contain"
                 />
               </div>
             </div>
@@ -98,7 +99,7 @@ const OurCharities = () => {
                 <img
                   src={charities[1].image}
                   alt={charities[1].name}
-                  className="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300"
+                  className="w-full h-72 object-contain"
                 />
               </div>
             </div>
@@ -143,7 +144,7 @@ const OurCharities = () => {
                 <img
                   src={charities[2].image}
                   alt={charities[2].name}
-                  className="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300"
+                  className="w-full h-72 object-contain"
                 />
               </div>
             </div>
