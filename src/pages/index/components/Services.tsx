@@ -18,7 +18,7 @@ const services = [
     icon: Home,
     title: 'Shingle Roof Replacement',
     description: 'Complete replacement services for asphalt shingle roofs with high-quality materials, expert installation, and comprehensive warranties.',
-    image: '/lovable-uploads/83eefe0b-60d9-4d16-bca4-9173e0981fa5.jpg'
+    image: '/lovable-uploads/a8d3d3b5-4d82-4350-a5af-4ff08ee4972e.png'
   },
   {
     icon: Shield,
