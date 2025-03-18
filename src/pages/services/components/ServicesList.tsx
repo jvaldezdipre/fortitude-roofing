@@ -1,5 +1,5 @@
 
-import { Building2, Shield, Home, Tool, CloudLightning, FileCheck } from "lucide-react";
+import { Building2, Shield, Home, Wrench, CloudLightning, FileCheck, ArrowRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const services = [
@@ -25,7 +25,7 @@ const services = [
     image: "/lovable-uploads/FORTIFIED-Banner.jpg",
   },
   {
-    icon: Tool,
+    icon: Wrench,
     title: "Roof Repair & Maintenance",
     description:
       "Professional repair services for leaks, damaged shingles, flashing issues, and other common roofing problems to extend the life of your roof.",
