@@ -1,44 +1,26 @@
 
 import { 
-  Home, 
   Building2, 
-  Hammer, 
-  ShieldCheck, 
-  Wrench, 
-  Clock 
+  Shield, 
+  Home
 } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 
 const services = [
   {
-    icon: Home,
-    title: 'Residential Roofing',
-    description: 'Complete roofing solutions for homes of all sizes, from traditional asphalt shingles to modern metal roofing systems.'
-  },
-  {
     icon: Building2,
-    title: 'Commercial Roofing',
-    description: 'Specialized commercial roofing services designed for durability, energy efficiency, and minimal business disruption.'
+    title: 'Standing Seam Metal Roof',
+    description: 'Premium standing seam metal roofing systems that offer superior durability, energy efficiency, and a sleek modern appearance for residential and commercial properties.'
   },
   {
-    icon: Hammer,
-    title: 'New Installations',
-    description: 'Expert installation of new roofing systems with premium materials and superior craftsmanship.'
+    icon: Home,
+    title: 'Shingle Roof Replacement',
+    description: 'Complete replacement services for asphalt shingle roofs with high-quality materials, expert installation, and comprehensive warranties.'
   },
   {
-    icon: Wrench,
-    title: 'Repairs & Maintenance',
-    description: 'Prompt and reliable repair services to fix leaks, damage, and extend the life of your existing roof.'
-  },
-  {
-    icon: ShieldCheck,
-    title: 'Roof Inspections',
-    description: 'Comprehensive inspections to identify potential issues before they become costly problems.'
-  },
-  {
-    icon: Clock,
-    title: 'Emergency Services',
-    description: '24/7 emergency response for unexpected roof damage from storms, fallen trees, or other disasters.'
+    icon: Shield,
+    title: 'Fortified Roof Systems',
+    description: 'FORTIFIED Roof™ certified installations that exceed building codes and provide superior protection against severe weather and natural disasters.'
   }
 ];
 
@@ -74,11 +56,11 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Roofing Services</h2>
           <p className="text-roofing-darkgray max-w-2xl mx-auto">
-            We offer a comprehensive range of professional roofing services tailored to meet the unique needs of each project.
+            We specialize in high-quality roofing solutions designed to protect your property and increase its value.
           </p>
         </div>
 
-        <div ref={sectionRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 staggered-fade-in">
+        <div ref={sectionRef} className="grid grid-cols-1 md:grid-cols-3 gap-8 staggered-fade-in">
           {services.map((service, index) => (
             <div 
               key={index} 
