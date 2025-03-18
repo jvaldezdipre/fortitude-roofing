@@ -1,8 +1,8 @@
 
 import AboutHero from "@/pages/about/components/AboutHero";
 import OurStory from "@/pages/about/components/OurStory";
-import OurTeam from "@/pages/about/components/OurTeam";
 import OurValues from "@/pages/about/components/OurValues";
+import OurCharities from "@/pages/about/components/OurCharities";
 
 const About = () => {
   return (
@@ -10,7 +10,7 @@ const About = () => {
       <AboutHero />
       <OurStory />
       <OurValues />
-      <OurTeam />
+      <OurCharities />
     </div>
   );
 };
