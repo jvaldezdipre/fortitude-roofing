@@ -1,8 +1,34 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 const ServiceHero = () => {
+  const heroRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (heroRef.current) {
+      observer.observe(heroRef.current);
+    }
+
+    return () => {
+      if (heroRef.current) {
+        observer.unobserve(heroRef.current);
+      }
+    };
+  }, []);
+
   return (
     <section className="relative py-20 md:py-28 overflow-hidden">
       {/* Background with overlay */}
@@ -17,7 +43,10 @@ const ServiceHero = () => {
       
       {/* Content */}
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="max-w-3xl mx-auto text-center">
+        <div 
+          ref={heroRef} 
+          className="max-w-3xl mx-auto text-center staggered-fade-in"
+        >
           <h1 className="text-3xl md:text-4xl lg:text-5xl text-white font-bold mb-6 tracking-wide">
             Professional Roofing Services
           </h1>

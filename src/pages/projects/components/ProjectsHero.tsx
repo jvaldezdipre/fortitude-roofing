@@ -1,8 +1,34 @@
 
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useEffect, useRef } from "react";
 
 const ProjectsHero = () => {
+  const heroRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (heroRef.current) {
+      observer.observe(heroRef.current);
+    }
+
+    return () => {
+      if (heroRef.current) {
+        observer.unobserve(heroRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="relative bg-roofing-charcoal py-20 md:py-24">
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30 z-10"></div>
@@ -11,7 +37,10 @@ const ProjectsHero = () => {
         style={{ backgroundImage: "url('/lovable-uploads/featured-image-roof.jpg')" }}
       ></div>
       <div className="container relative z-20">
-        <div className="max-w-3xl mx-auto text-center">
+        <div 
+          ref={heroRef} 
+          className="max-w-3xl mx-auto text-center staggered-fade-in"
+        >
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our Roofing Projects
           </h1>
