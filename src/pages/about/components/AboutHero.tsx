@@ -37,7 +37,7 @@ const AboutHero = () => {
               "url('/lovable-uploads/featured-image-roof.jpg')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-roofing-charcoal/90 to-roofing-charcoal" />
+        <div className="absolute inset-0 bg-gradient-to-b from-roofing-charcoal via-roofing-charcoal/90 to-roofing-charcoal" />
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
