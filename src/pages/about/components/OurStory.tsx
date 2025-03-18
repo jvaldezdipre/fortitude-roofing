@@ -1,6 +1,10 @@
-
 import { useRef, useEffect } from "react";
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
 import { Award } from "lucide-react";
 
 const OurStory = () => {
@@ -62,13 +66,23 @@ const OurStory = () => {
               From Humble Beginnings to Industry Leadership
             </h3>
             <p className="text-roofing-darkgray mb-6">
-              Founded in 2003 by the Johnson family, PeakRoof began as a small residential roofing company with just three employees. Our dedication to quality craftsmanship and exceptional customer service quickly earned us a reputation as the most reliable roofing contractor in the area.
+              Founded in 2003 by the Johnson family, PeakRoof began as a small
+              residential roofing company with just three employees. Our
+              dedication to quality craftsmanship and exceptional customer
+              service quickly earned us a reputation as the most reliable
+              roofing contractor in the area.
             </p>
             <p className="text-roofing-darkgray mb-6">
-              As our reputation grew, so did our team and capabilities. Today, we're proud to be a full-service roofing company with over 50 skilled professionals serving both residential and commercial clients throughout the region.
+              As our reputation grew, so did our team and capabilities. Today,
+              we're proud to be a full-service roofing company with over 50
+              skilled professionals serving both residential and commercial
+              clients throughout the region.
             </p>
             <p className="text-roofing-darkgray">
-              Despite our growth, we've never lost sight of our founding principles: quality workmanship, honest business practices, and putting our customers first. These values continue to guide us as we look toward the future.
+              Despite our growth, we've never lost sight of our founding
+              principles: quality workmanship, honest business practices, and
+              putting our customers first. These values continue to guide us as
+              we look toward the future.
             </p>
           </div>
         </div>
@@ -76,9 +90,9 @@ const OurStory = () => {
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card className="overflow-hidden transition-all hover:shadow-lg">
             <div className="h-48 overflow-hidden">
-              <img 
-                src="/lovable-uploads/FORTIFIED-Banner.jpg" 
-                alt="FORTIFIED Certification" 
+              <img
+                src="/lovable-uploads/FORTIFIED-Banner.jpg"
+                alt="FORTIFIED Certification"
                 className="w-full h-full object-cover object-center"
               />
             </div>
@@ -88,51 +102,60 @@ const OurStory = () => {
             </CardHeader>
             <CardContent>
               <p className="text-roofing-darkgray">
-                Our FORTIFIED certification ensures we build roofs that meet the highest standards for weather resistance and durability.
+                Our FORTIFIED certification ensures we build roofs that meet the
+                highest standards for weather resistance and durability.
               </p>
             </CardContent>
             <CardFooter className="text-sm text-muted-foreground">
               Certified since 2010
             </CardFooter>
           </Card>
-          
+
           <Card className="overflow-hidden transition-all hover:shadow-lg">
             <div className="h-48 overflow-hidden">
-              <img 
-                src="/lovable-uploads/83eefe0b-60d9-4d16-bca4-9173e0981fa5.jpg" 
-                alt="Certainteed Shingle Master Certification" 
+              <img
+                src="/lovable-uploads/83eefe0b-60d9-4d16-bca4-9173e0981fa5.jpg"
+                alt="Certainteed Shingle Master Certification"
                 className="w-full h-full object-cover object-center"
               />
             </div>
             <CardHeader className="flex flex-row items-center gap-2">
               <Award className="text-roofing-teal" />
-              <h4 className="text-xl font-semibold">Certainteed Shingle Master</h4>
+              <h4 className="text-xl font-semibold">
+                Certainteed Shingle Master
+              </h4>
             </CardHeader>
             <CardContent>
               <p className="text-roofing-darkgray">
-                As Certainteed Shingle Masters and Shingle Quality Specialists, we're qualified to offer the industry's most comprehensive warranties and highest quality shingle installations.
+                As Certainteed Shingle Masters and Shingle Quality Specialists,
+                we're qualified to offer the industry's most comprehensive
+                warranties and highest quality shingle installations.
               </p>
             </CardContent>
             <CardFooter className="text-sm text-muted-foreground">
               Certified since 2015
             </CardFooter>
           </Card>
-          
+
           <Card className="overflow-hidden transition-all hover:shadow-lg">
             <div className="h-48 overflow-hidden">
-              <img 
-                src="/lovable-uploads/Shingle+Roof+Replacement.jpg" 
-                alt="Union Metal Pro Contractor Certification" 
+              <img
+                src="/lovable-uploads/union-metalpro-contractor.png"
+                alt="Union Metal Pro Contractor Certification"
                 className="w-full h-full object-cover object-center"
               />
             </div>
             <CardHeader className="flex flex-row items-center gap-2">
               <Award className="text-roofing-teal" />
-              <h4 className="text-xl font-semibold">Union Metal Pro Contractor</h4>
+              <h4 className="text-xl font-semibold">
+                Union Metal Pro Contractor
+              </h4>
             </CardHeader>
             <CardContent>
               <p className="text-roofing-darkgray">
-                As Union Metal Pro Contractors, we're certified to install premium metal roofing systems with industry-leading warranties and performance.
+                As Union Metal Pro Contractors, we're certified to install
+                premium metal roofing systems with industry-leading warranties
+                and performance.
               </p>
             </CardContent>
             <CardFooter className="text-sm text-muted-foreground">

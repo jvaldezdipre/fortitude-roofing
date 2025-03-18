@@ -1,4 +1,3 @@
-
 import { useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -7,19 +6,19 @@ const charities = [
     name: "North Carolina Sheriff's Association",
     description:
       "The North Carolina Sheriffs' Association is the statewide organization of our state's 100 Sheriffs. Through their Association, the Sheriffs work to strengthen the professional law enforcement services their offices provide to the people of North Carolina.",
-    image: "/public/lovable-uploads/sherrif-association.jpeg",
+    image: "/lovable-uploads/sherrif-association.jpeg",
   },
   {
     name: "Autism Society of North Carolina",
     description:
       "The Autism Society of North Carolina improves the lives of individuals with autism, supports their families, and educates communities.",
-    image: "/public/lovable-uploads/autism-society.jpg",
+    image: "/lovable-uploads/autism-society.jpg",
   },
   {
     name: "Alzheimer's Association of Eastern North Carolina",
     description:
       "The Alzheimer's Association leads the way to end Alzheimer's and all other dementia — by accelerating global research, driving risk reduction and early detection, and maximizing quality care and support.",
-    image: "/public/lovable-uploads/alzhermers-association.jpeg",
+    image: "/lovable-uploads/alzhermers-association.jpeg",
   },
 ];
 
