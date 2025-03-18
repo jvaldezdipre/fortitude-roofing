@@ -5,7 +5,10 @@ import {
   ShieldCheck, 
   FileCheck, 
   Badge, 
-  Users
+  Users,
+  Heart,
+  Percent,
+  Building
 } from 'lucide-react';
 
 const Trust = () => {
@@ -49,29 +52,13 @@ const Trust = () => {
             <div className="flex">
               <div className="flex-shrink-0 mr-4">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-roofing-teal/10 text-roofing-teal">
-                  <ShieldCheck className="h-6 w-6" />
+                  <Building className="h-6 w-6" />
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Fully Insured & Licensed</h3>
+                <h3 className="text-xl font-semibold mb-2">Over 60 Years Of Roofing Experience</h3>
                 <p className="text-roofing-darkgray">
-                  We carry comprehensive liability insurance and all required licenses for your complete protection and peace of mind.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-6 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-            <div className="flex">
-              <div className="flex-shrink-0 mr-4">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-roofing-teal/10 text-roofing-teal">
-                  <Badge className="h-6 w-6" />
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Industry Certifications</h3>
-                <p className="text-roofing-darkgray">
-                  Our team maintains certifications from leading manufacturers and industry organizations, ensuring the highest quality standards.
+                  Our decades of experience in the roofing industry ensure that we have the expertise to handle any project with precision and skill.
                 </p>
               </div>
             </div>
@@ -85,9 +72,25 @@ const Trust = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Award-Winning Service</h3>
+                <h3 className="text-xl font-semibold mb-2">Over 400 5-Star Reviews</h3>
                 <p className="text-roofing-darkgray">
-                  Recognized for excellence with industry awards and consistently high ratings from satisfied customers.
+                  Our satisfied customers have shared their positive experiences, reflecting our commitment to excellence and customer satisfaction.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-6 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex">
+              <div className="flex-shrink-0 mr-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-roofing-teal/10 text-roofing-teal">
+                  <Badge className="h-6 w-6" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">100% Satisfaction Guarantee</h3>
+                <p className="text-roofing-darkgray">
+                  We stand behind our work with a full satisfaction guarantee, ensuring your complete confidence in our services.
                 </p>
               </div>
             </div>
@@ -101,9 +104,9 @@ const Trust = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Written Warranty</h3>
+                <h3 className="text-xl font-semibold mb-2">Premier Quality Materials</h3>
                 <p className="text-roofing-darkgray">
-                  We stand behind our work with comprehensive warranties on both materials and workmanship for your long-term satisfaction.
+                  We only use the highest quality roofing materials, ensuring durability, performance, and long-lasting protection for your property.
                 </p>
               </div>
             </div>
@@ -117,9 +120,41 @@ const Trust = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Experienced Team</h3>
+                <h3 className="text-xl font-semibold mb-2">Local And Vested In Our Community</h3>
                 <p className="text-roofing-darkgray">
-                  Our skilled professionals have decades of combined experience in all types of roofing projects and challenging conditions.
+                  As a local business, we're committed to serving and investing in our community, building relationships that extend beyond just business.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-6 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex">
+              <div className="flex-shrink-0 mr-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-roofing-teal/10 text-roofing-teal">
+                  <Heart className="h-6 w-6" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Supporting Autism Society Of NC</h3>
+                <p className="text-roofing-darkgray">
+                  A portion of all our proceeds goes to the Autism Society of North Carolina, supporting vital services and advocacy in our community.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-6 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex">
+              <div className="flex-shrink-0 mr-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-roofing-teal/10 text-roofing-teal">
+                  <Percent className="h-6 w-6" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Affordable Financing Options</h3>
+                <p className="text-roofing-darkgray">
+                  Financing available from as low as 2.99% for 60 months, making quality roofing services accessible for every budget.
                 </p>
               </div>
             </div>
@@ -133,9 +168,9 @@ const Trust = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Safety Standards</h3>
+                <h3 className="text-xl font-semibold mb-2">Fully Insured</h3>
                 <p className="text-roofing-darkgray">
-                  We maintain rigorous safety protocols that exceed industry standards to protect our team and your property.
+                  We carry comprehensive liability insurance for your complete protection and peace of mind throughout the entire roofing project.
                 </p>
               </div>
             </div>
@@ -155,20 +190,20 @@ const Trust = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white p-4 rounded-lg text-center">
-                <div className="text-3xl font-bold text-roofing-teal mb-1">20+</div>
-                <div className="text-sm text-roofing-darkgray">Years in Business</div>
+                <div className="text-3xl font-bold text-roofing-teal mb-1">60+</div>
+                <div className="text-sm text-roofing-darkgray">Years Experience</div>
               </div>
               <div className="bg-white p-4 rounded-lg text-center">
-                <div className="text-3xl font-bold text-roofing-teal mb-1">50+</div>
-                <div className="text-sm text-roofing-darkgray">Team Members</div>
+                <div className="text-3xl font-bold text-roofing-teal mb-1">400+</div>
+                <div className="text-sm text-roofing-darkgray">5-Star Reviews</div>
               </div>
               <div className="bg-white p-4 rounded-lg text-center">
-                <div className="text-3xl font-bold text-roofing-teal mb-1">1,500+</div>
-                <div className="text-sm text-roofing-darkgray">Projects Completed</div>
+                <div className="text-3xl font-bold text-roofing-teal mb-1">100%</div>
+                <div className="text-sm text-roofing-darkgray">Satisfaction Guarantee</div>
               </div>
               <div className="bg-white p-4 rounded-lg text-center">
-                <div className="text-3xl font-bold text-roofing-teal mb-1">98%</div>
-                <div className="text-sm text-roofing-darkgray">Client Satisfaction</div>
+                <div className="text-3xl font-bold text-roofing-teal mb-1">2.99%</div>
+                <div className="text-sm text-roofing-darkgray">Financing Available</div>
               </div>
             </div>
           </div>
