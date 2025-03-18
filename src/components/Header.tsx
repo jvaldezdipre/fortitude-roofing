@@ -52,9 +52,9 @@ const Header = () => {
           <nav className="hidden lg:flex items-center space-x-8">
             <Link to="/" className={`font-medium transition-colors ${isScrolled ? 'text-roofing-charcoal hover:text-roofing-teal' : 'text-white hover:text-roofing-teal'}`}>Home</Link>
             <Link to="/services" className={`font-medium transition-colors ${isScrolled ? 'text-roofing-charcoal hover:text-roofing-teal' : 'text-white hover:text-roofing-teal'}`}>Services</Link>
+            <Link to="/projects" className={`font-medium transition-colors ${isScrolled ? 'text-roofing-charcoal hover:text-roofing-teal' : 'text-white hover:text-roofing-teal'}`}>Projects</Link>
             <Link to="/reviews" className={`font-medium transition-colors ${isScrolled ? 'text-roofing-charcoal hover:text-roofing-teal' : 'text-white hover:text-roofing-teal'}`}>Reviews</Link>
             <Link to="/about" className={`font-medium transition-colors ${isScrolled ? 'text-roofing-charcoal hover:text-roofing-teal' : 'text-white hover:text-roofing-teal'}`}>About</Link>
-            <Link to="/charities" className={`font-medium transition-colors ${isScrolled ? 'text-roofing-charcoal hover:text-roofing-teal' : 'text-white hover:text-roofing-teal'}`}>Charities</Link>
             <Link to="/contact" className={`font-medium transition-colors ${isScrolled ? 'text-roofing-charcoal hover:text-roofing-teal' : 'text-white hover:text-roofing-teal'}`}>Contact</Link>
           </nav>
 
@@ -87,9 +87,9 @@ const Header = () => {
             <div className="px-4 py-5 space-y-4">
               <Link to="/" className="block text-roofing-charcoal hover:text-roofing-teal font-medium" onClick={() => setMobileMenuOpen(false)}>Home</Link>
               <Link to="/services" className="block text-roofing-charcoal hover:text-roofing-teal font-medium" onClick={() => setMobileMenuOpen(false)}>Services</Link>
+              <Link to="/projects" className="block text-roofing-charcoal hover:text-roofing-teal font-medium" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
               <Link to="/reviews" className="block text-roofing-charcoal hover:text-roofing-teal font-medium" onClick={() => setMobileMenuOpen(false)}>Reviews</Link>
               <Link to="/about" className="block text-roofing-charcoal hover:text-roofing-teal font-medium" onClick={() => setMobileMenuOpen(false)}>About</Link>
-              <Link to="/charities" className="block text-roofing-charcoal hover:text-roofing-teal font-medium" onClick={() => setMobileMenuOpen(false)}>Charities</Link>
               <Link to="/contact" className="block text-roofing-charcoal hover:text-roofing-teal font-medium" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
               <div className="pt-2 border-t">
                 <a href="tel:+18005551234" className="flex items-center text-roofing-charcoal py-2">
