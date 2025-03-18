@@ -90,7 +90,7 @@ const Services = () => {
                 <p className="text-gray-200">{service.description}</p>
                 <div className="mt-auto pt-6">
                   <button className="text-white font-medium flex items-center hover:underline">
-                    Learn More
+                    Request a Quote
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-5 w-5 ml-1"
