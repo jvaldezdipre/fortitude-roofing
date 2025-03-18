@@ -64,7 +64,7 @@ const OurCharities = () => {
 
         <div ref={sectionRef} className="space-y-16 staggered-fade-in">
           {/* First charity - text left, image right */}
-          <div className="flex flex-col lg:flex-row items-center gap-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow p-6">
+          <div className="flex flex-col lg:flex-row items-center gap-8 bg-white rounded-lg p-6">
             <div className="lg:w-1/2 flex flex-col justify-center order-2 lg:order-1">
               <h3 className="text-2xl font-semibold mb-4">
                 {charities[0].name}
@@ -82,7 +82,7 @@ const OurCharities = () => {
               </div>
             </div>
             <div className="lg:w-1/2 order-1 lg:order-2">
-              <div className="rounded-lg overflow-hidden shadow-md">
+              <div>
                 <img
                   src={charities[0].image}
                   alt={charities[0].name}
@@ -93,9 +93,9 @@ const OurCharities = () => {
           </div>
 
           {/* Second charity - image left, text right */}
-          <div className="flex flex-col lg:flex-row items-center gap-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow p-6">
+          <div className="flex flex-col lg:flex-row items-center gap-8 bg-white rounded-lg p-6">
             <div className="lg:w-1/2 order-1">
-              <div className="rounded-lg overflow-hidden shadow-md">
+              <div>
                 <img
                   src={charities[1].image}
                   alt={charities[1].name}
@@ -122,7 +122,7 @@ const OurCharities = () => {
           </div>
 
           {/* Third charity - text left, image right */}
-          <div className="flex flex-col lg:flex-row items-center gap-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow p-6">
+          <div className="flex flex-col lg:flex-row items-center gap-8 bg-white rounded-lg p-6">
             <div className="lg:w-1/2 flex flex-col justify-center order-2 lg:order-1">
               <h3 className="text-2xl font-semibold mb-4">
                 {charities[2].name}
@@ -140,7 +140,7 @@ const OurCharities = () => {
               </div>
             </div>
             <div className="lg:w-1/2 order-1 lg:order-2">
-              <div className="rounded-lg overflow-hidden shadow-md">
+              <div>
                 <img
                   src={charities[2].image}
                   alt={charities[2].name}
