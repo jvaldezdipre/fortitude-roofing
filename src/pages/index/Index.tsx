@@ -19,6 +19,12 @@ const Index = () => {
     // Scroll to top on page load
     window.scrollTo(0, 0);
     
+    // Add animation class to hero section
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+      heroSection.classList.add('animate-fade-in');
+    }
+    
     // Trigger animations immediately for hero section
     const animatedElements = document.querySelectorAll('.staggered-fade-in');
     animatedElements.forEach(element => {

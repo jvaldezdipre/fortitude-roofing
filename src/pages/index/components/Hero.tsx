@@ -50,7 +50,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden pb-12 md:pb-0">
+    <section className="relative min-h-screen flex items-center overflow-hidden pb-12 md:pb-0 hero-section animate-fade-in">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-roofing-charcoal/90 to-roofing-charcoal/70 z-10"></div>
@@ -65,7 +65,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 lg:px-8 relative z-10 py-12 md:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Column - Main Hero Content */}
-          <div className="mt-16 md:mt-8 lg:mt-0" ref={heroRef}>
+          <div className="mt-16 md:mt-8 lg:mt-0 animate-[fade-in_0.6s_ease-out,slide-in-right_0.5s_ease-out]" ref={heroRef}>
             <div className="staggered-fade-in visible">
               <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-tight mb-4 tracking-wide">
                 Quality Roofing Solutions You Can Trust
@@ -130,7 +130,7 @@ const Hero = () => {
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="bg-white/10 backdrop-blur-sm p-5 md:p-6 rounded-lg border border-white/20 max-w-md mx-auto lg:ml-auto w-full mt-8 md:mt-12 lg:mt-0 animate-on-scroll visible">
+          <div className="bg-white/10 backdrop-blur-sm p-5 md:p-6 rounded-lg border border-white/20 max-w-md mx-auto lg:ml-auto w-full mt-8 md:mt-12 lg:mt-0 animate-[fade-in_0.8s_ease-out,scale-in_0.6s_ease-out]">
             <h2 className="text-xl md:text-2xl font-bold text-white mb-4 tracking-wide">
               Request a Free Quote
             </h2>
