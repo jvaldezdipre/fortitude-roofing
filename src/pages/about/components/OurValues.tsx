@@ -50,11 +50,6 @@ const OurValues = () => {
             <p className="text-roofing-darkgray text-center mb-4">
               Everyone has a different path and purpose in life. It is our duty to develop our employees into their best version of themselves.
             </p>
-            <ul className="text-sm text-roofing-darkgray list-disc pl-5 space-y-1">
-              <li>We own our tasks, hold ourselves accountable, and admit mistakes</li>
-              <li>We work as a team and value each other</li>
-              <li>We lead with a positive, uplifting attitude</li>
-            </ul>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
@@ -65,11 +60,6 @@ const OurValues = () => {
             <p className="text-roofing-darkgray text-center mb-4">
               Customer experience is everything to us. Our promise is to differentiate through superior customer service and superior craftsmanship.
             </p>
-            <ul className="text-sm text-roofing-darkgray list-disc pl-5 space-y-1">
-              <li>We go the extra mile without being asked</li>
-              <li>We do the right thing, even if it means operating at a loss</li>
-              <li>We educate - we don't sell</li>
-            </ul>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
@@ -80,11 +70,6 @@ const OurValues = () => {
             <p className="text-roofing-darkgray text-center mb-4">
               Fortitude is more than just a roofing company. We will better our communities through the work we do, and we will look for ways to give back each & every day.
             </p>
-            <ul className="text-sm text-roofing-darkgray list-disc pl-5 space-y-1">
-              <li>Portions of job proceeds get donated regularly to charity</li>
-              <li>We volunteer our time to community service</li>
-              <li>We leave our community better than we find it</li>
-            </ul>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
