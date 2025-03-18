@@ -6,7 +6,7 @@ import OurCharities from "@/pages/about/components/OurCharities";
 
 const About = () => {
   return (
-    <div className="mt-20 overflow-x-hidden">
+    <div className="overflow-x-hidden">
       <AboutHero />
       <OurStory />
       <OurValues />
