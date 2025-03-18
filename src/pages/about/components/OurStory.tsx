@@ -122,21 +122,21 @@ const OurStory = () => {
             <div className="h-48 overflow-hidden">
               <img 
                 src="/lovable-uploads/Shingle+Roof+Replacement.jpg" 
-                alt="Owens Corning Platinum Certification" 
+                alt="Union Metal Pro Contractor Certification" 
                 className="w-full h-full object-cover object-center"
               />
             </div>
             <CardHeader className="flex flex-row items-center gap-2">
               <Award className="text-roofing-teal" />
-              <h4 className="text-xl font-semibold">Owens Corning Platinum</h4>
+              <h4 className="text-xl font-semibold">Union Metal Pro Contractor</h4>
             </CardHeader>
             <CardContent>
               <p className="text-roofing-darkgray">
-                Our Owens Corning Platinum Preferred status means we can offer the industry's best warranties and highest quality materials.
+                As Union Metal Pro Contractors, we're certified to install premium metal roofing systems with industry-leading warranties and performance.
               </p>
             </CardContent>
             <CardFooter className="text-sm text-muted-foreground">
-              Platinum status since 2018
+              Certified since 2019
             </CardFooter>
           </Card>
         </div>
