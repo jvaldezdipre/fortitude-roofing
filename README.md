@@ -1,69 +1,105 @@
-# Welcome to your Lovable project
 
-## Project info
+# Premium Roofing Services Website
 
-**URL**: https://lovable.dev/projects/a53f89a2-5065-48e2-81bd-c8c870c4eb07
+## Overview
 
-## How can I edit this code?
+A professional website for a roofing contractor company showcasing their services, completed projects, and company information. The site is designed to build trust with potential customers through quality imagery, detailed project information, and easy navigation.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- **Responsive Design**: Fully responsive website that works seamlessly on desktop, tablet, and mobile devices
+- **Project Showcase**: Interactive project gallery with detailed information about past roofing projects
+- **Interactive Map**: Geographic visualization of completed projects
+- **Company Information**: Detailed about page highlighting company history, values, and charitable contributions
+- **Services Section**: Comprehensive overview of available roofing services
+- **Contact Forms**: Easy ways for customers to request quotes and information
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a53f89a2-5065-48e2-81bd-c8c870c4eb07) and start prompting.
+## Technology Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+This project is built with modern web technologies:
 
-**Use your preferred IDE**
+- **React**: Frontend UI library
+- **TypeScript**: Type-safe JavaScript
+- **Vite**: Fast build tool and development server
+- **Tailwind CSS**: Utility-first CSS framework for styling
+- **Shadcn UI**: Component library for consistent UI elements
+- **React Router**: Client-side routing
+- **Google Maps API**: For the interactive project map
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
 
-Follow these steps:
+- Node.js (v16 or higher)
+- npm or another package manager
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Installation
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. Navigate to the project directory:
+   ```
+   cd roofing-website
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+3. Install dependencies:
+   ```
+   npm install
+   ```
+
+4. Start the development server:
+   ```
+   npm run dev
+   ```
+
+5. Open your browser and visit:
+   ```
+   http://localhost:8080
+   ```
+
+## Project Structure
+
+```
+src/
+├── components/      # Reusable UI components
+├── pages/           # Page-specific components
+│   ├── about/       # About page components
+│   ├── contact/     # Contact page components
+│   ├── index/       # Homepage components
+│   ├── projects/    # Projects page components
+│   ├── reviews/     # Reviews page components
+│   └── services/    # Services page components
+├── hooks/           # React hooks
+├── lib/             # Utility functions
+└── App.tsx          # Main application component
 ```
 
-**Edit a file directly in GitHub**
+## Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The site can be easily deployed to various hosting platforms:
 
-**Use GitHub Codespaces**
+- **Lovable**: Click "Share" -> "Publish" in the Lovable platform
+- **Netlify/Vercel**: Connect your GitHub repository for automatic deployments
+- **GitHub Pages**: Use the GitHub Pages workflow for static site hosting
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Contributing
 
-## What technologies are used for this project?
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-This project is built with .
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## License
 
-## How can I deploy this project?
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Simply open [Lovable](https://lovable.dev/projects/a53f89a2-5065-48e2-81bd-c8c870c4eb07) and click on Share -> Publish.
+## Acknowledgments
 
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+- Images sourced from Unsplash
+- Built with [Lovable](https://lovable.dev)
