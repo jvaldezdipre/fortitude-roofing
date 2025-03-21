@@ -60,6 +60,35 @@ This project is built with modern web technologies:
    http://localhost:8080
    ```
 
+## Deployment
+
+### GitHub Pages Deployment
+
+To deploy this site to GitHub Pages:
+
+1. Fork or clone this repository
+2. Update the `base` path in `vite.config.ts` to match your repository name:
+   ```js
+   base: '/your-repo-name/',
+   ```
+3. Push your changes to the `main` branch
+4. GitHub Actions will automatically build and deploy your site
+5. Your site will be available at `https://your-username.github.io/your-repo-name/`
+
+### Manual Deployment
+
+1. Build the project:
+   ```
+   npm run build
+   ```
+2. The built files will be in the `dist` directory
+3. Upload these files to your web hosting service
+
+### Other Deployment Options
+
+- **Netlify/Vercel**: Connect your GitHub repository for automatic deployments
+- **Lovable**: Click "Share" -> "Publish" in the Lovable platform
+
 ## Project Structure
 
 ```
@@ -76,14 +105,6 @@ src/
 ├── lib/             # Utility functions
 └── App.tsx          # Main application component
 ```
-
-## Deployment
-
-The site can be easily deployed to various hosting platforms:
-
-- **Lovable**: Click "Share" -> "Publish" in the Lovable platform
-- **Netlify/Vercel**: Connect your GitHub repository for automatic deployments
-- **GitHub Pages**: Use the GitHub Pages workflow for static site hosting
 
 ## Contributing
 
