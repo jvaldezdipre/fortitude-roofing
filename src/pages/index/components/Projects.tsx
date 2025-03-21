@@ -2,6 +2,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const projects = [
   {
@@ -41,6 +42,7 @@ const projects = [
 const Projects = () => {
   const [currentProject, setCurrentProject] = useState(0);
   const sectionRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
 
   const nextProject = () => {
     setCurrentProject((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
@@ -139,7 +141,7 @@ const Projects = () => {
           <div className="mt-12">
             <Button 
               className="bg-roofing-teal hover:bg-roofing-teal/90 text-white"
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => navigate('/projects')}
             >
               View All Projects <ExternalLink className="ml-2 h-4 w-4" />
             </Button>
