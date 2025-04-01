@@ -64,16 +64,24 @@ This project is built with .
 
 Simply open [Lovable](https://lovable.dev/projects/a53f89a2-5065-48e2-81bd-c8c870c4eb07) and click on Share -> Publish.
 
-### Deploying to GitHub Pages
+### Deploying to Netlify
 
-This project is configured to deploy to GitHub Pages automatically when changes are pushed to the main branch. The deployment is handled by GitHub Actions.
+This project is configured to deploy to Netlify. To set up Netlify deployment:
 
-To set up GitHub Pages:
+1. Push your code to GitHub
+2. Go to [Netlify](https://app.netlify.com/) and sign in
+3. Click "New site from Git"
+4. Select your GitHub repository
+5. Configure the build settings:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+6. Click "Deploy site"
 
-1. Go to your repository settings on GitHub
-2. Navigate to Pages section
-3. Under "Build and deployment" select "GitHub Actions" as the source
-4. The site will be available at `https://[your-username].github.io/fortitude-roofing/`
+The configuration is already included in the `netlify.toml` file, which handles:
+
+- Build settings
+- SPA redirect rules for React Router
+- Cache headers for static assets
 
 ## I want to use a custom domain - is that possible?
 

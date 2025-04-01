@@ -8,21 +8,21 @@ const services = [
     title: "Standing Seam Metal Roof",
     description:
       "Premium standing seam metal roofing systems that offer superior durability, energy efficiency, and a sleek modern appearance for residential and commercial properties.",
-    image: "/public/lovable-uploads/hero-img.jpeg",
+    image: "/lovable-uploads/hero-img.jpeg",
   },
   {
     icon: Home,
     title: "Shingle Roof Replacement",
     description:
       "Complete replacement services for asphalt shingle roofs with high-quality materials, expert installation, and comprehensive warranties.",
-    image: "/public/lovable-uploads/featured-image-roof.jpg",
+    image: "/lovable-uploads/featured-image-roof.jpg",
   },
   {
     icon: Shield,
     title: "Fortified Roof Systems",
     description:
       "FORTIFIED Roof™ certified installations that exceed building codes and provide superior protection against severe weather and natural disasters.",
-    image: "/public/lovable-uploads/FORTIFIED-Banner.jpg",
+    image: "/lovable-uploads/FORTIFIED-Banner.jpg",
   },
 ];
 
