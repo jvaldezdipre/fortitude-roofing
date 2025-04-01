@@ -64,6 +64,17 @@ This project is built with .
 
 Simply open [Lovable](https://lovable.dev/projects/a53f89a2-5065-48e2-81bd-c8c870c4eb07) and click on Share -> Publish.
 
+### Deploying to GitHub Pages
+
+This project is configured to deploy to GitHub Pages automatically when changes are pushed to the main branch. The deployment is handled by GitHub Actions.
+
+To set up GitHub Pages:
+
+1. Go to your repository settings on GitHub
+2. Navigate to Pages section
+3. Under "Build and deployment" select "GitHub Actions" as the source
+4. The site will be available at `https://[your-username].github.io/fortitude-roofing/`
+
 ## I want to use a custom domain - is that possible?
 
 We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
